@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "../src/css/bootstrap.css";
+@import "../src/css/classic.css";
+@import "../src/css/flexslider.css";
+@import "../src/css/font-awesome.css";
+@import "../src/css/fullwidth.css";
+@import "../src/css/jquery.bxslider.css";
+@import "../src/css/jquery.countdown.css";
+@import "../src/css/jquery.fancybox-1.3.4.css";
+@import "../src/css/jquery.fancybox.css";
+@import "../src/css/style.css";
+@import "../src/css/magnific-popup.css";
+@import "../src/css/responsive.css";
+@import "../src/css/settings.css";
+
+.grid {
+    display: grid;
+    grid-template-columns: 585px 585px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.f-about {
+    height: 249.6px;
+}
+
+.mb20 {
+    line-height: 1.9;
 }
