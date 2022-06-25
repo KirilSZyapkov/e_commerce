@@ -1,9 +1,10 @@
 import React from 'react';
 
-const poductList = require('../products.json');
+const productList = require('../products.json');
 
 function Catalog() {
     
+    console.log(productList);
   return (
     <div>Catalog</div>
   )
