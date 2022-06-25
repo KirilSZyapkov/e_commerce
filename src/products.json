@@ -5,6 +5,88 @@
         "sizes": ["S", "M", "L"],
         "color": ["yellow", "black", "green", "blue", "red"],
         "material": "Wool",
-        "price": 899.00
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 2,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 3,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 4,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 5,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 6,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 7,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 8,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
+    },
+    {
+        "id": 9,
+        "name": "Sweeter",
+        "sizes": ["S", "M", "L"],
+        "color": ["yellow", "black", "green", "blue", "red"],
+        "material": "Wool",
+        "price": 899.00,
+        "image": "images/products/arrival1.jpg",
+        "category": "men"
     }
 ]

@@ -4,6 +4,7 @@ import HomePage from './components/HomePage';
 import HeaderMenu from "./components/HeaderMenu";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Catalog from "./components/Catalog";
 // import SingleProduct from "./components/SingleProduct";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
       <Route exect path="/" element={<HomePage/>} />
       <Route path="/about-us" element={<About/>} />
+      <Route path="/catalog" element={<Catalog/>} />
 
     </Routes>
     <Footer/>
