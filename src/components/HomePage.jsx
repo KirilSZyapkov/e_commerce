@@ -1,6 +1,34 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+
+import './HomePage.css';
+
+const slide = [
+	"images/slider2.jpg",
+	"images/slider3.jpg",
+	"images/slider5.jpg"
+]
+
 
 function HomePage() {
+
+	// const [curSlide, setCurSlide] = useState(0);
+
+	// useEffect(()=>{
+
+	// 	const setTimeOut = setTimeout(()=>{
+	// 		setCurSlide(prevCurSlide => {
+	// 			prevCurSlide = prevCurSlide + 1;
+	// 			if(prevCurSlide > slide.length - 1) {
+	// 				prevCurSlide = 0;
+	// 			}
+	// 			return prevCurSlide;
+	// 		})
+	// 	}, 9000);
+
+	// 	return ()=>clearTimeout(setTimeOut);
+
+	// },[curSlide]);
+
   return (
     <>
 
@@ -8,94 +36,9 @@ function HomePage() {
         <div className="slider">
           <div className="fullwidthbanner-container mb30">
             <div className="fullwidthbanner" id="intro">
-              <ul>
+                {/* <img style={{"width": "100%"}} src={slide[curSlide]} data-fullwidthcentering="on" alt="slide" /> */}
 
-                <li data-transition="random" data-slotamount="10" data-masterspeed="300">
-
-                  <img src="images/slider5.jpg" data-fullwidthcentering="on" alt="slide" />
-
-                  <div className="caption small_text lft" data-x="center" data-y="130" data-speed="300"
-                    data-start="1200" data-easing="easeOutExpo" data-end="7000" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    Hot Trends of This Year
-                  </div>
-
-                  <div className="caption big_white lfb stt" data-x="center" data-y="250" data-speed="500"
-                    data-start="1800" data-easing="easeOutExpo" data-end="7100" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    new autumN collection
-                  </div>
-
-
-                </li>
-
-                <li data-transition="random" data-slotamount="10" data-masterspeed="300">
-
-                  <img src="images/slider2.jpg" data-fullwidthcentering="on" alt="slide" />
-
-                  <div className="caption small_text lft" data-x="center" data-y="130" data-speed="300"
-                    data-start="1200" data-easing="easeOutExpo" data-end="7000" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    Hot Trends of This Year
-                  </div>
-
-                  <div className="caption lfl" data-x="center" data-y="180" data-speed="400" data-start="1800"
-                    data-easing="easeOutExpo" data-end="7200" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    <img src="images/s-border.png" alt="Image_1" />
-                  </div>
-
-                  <div className="caption big_white lfb stt" data-x="center" data-y="250" data-speed="500"
-                    data-start="1800" data-easing="easeOutExpo" data-end="7100" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    Winter collection
-                  </div>
-
-                  <div className="caption lfb stt" data-x="center" data-y="340" data-speed="640"
-                    data-start="2100" data-easing="easeOutExpo" data-end="7100" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    <a href="/" className="slider-button">SHOP NOW </a>
-                  </div>
-
-
-                </li>
-
-
-                <li data-transition="random" data-slotamount="10" data-masterspeed="300">
-
-                  <img src="images/slider3.jpg" data-fullwidthcentering="on" alt="slide" />
-
-                  <div className="caption modern_small_text_dark lft" data-x="710" data-y="80"
-                    data-speed="300" data-start="1200" data-easing="easeOutExpo" data-end="7000"
-                    data-endspeed="300" data-endeasing="easeInSine">
-                    Hot Trends of This Year
-                  </div>
-
-
-
-                  <div className="caption big_black lfb stt" data-x="650" data-y="150" data-speed="500"
-                    data-start="1800" data-easing="easeOutExpo" data-end="7100" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    Summer<br />Trends
-                  </div>
-
-                  <div className="caption lfl" data-x="730" data-y="310" data-speed="400" data-start="1800"
-                    data-easing="easeOutExpo" data-end="7200" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    <img src="images/s-border2.png" alt="Image_1" />
-                  </div>
-
-                  <div className="caption lfb stt" data-x="745" data-y="350" data-speed="640"
-                    data-start="2100" data-easing="easeOutExpo" data-end="7100" data-endspeed="300"
-                    data-endeasing="easeInSine">
-                    <a href="/" className="slider-button2">SHOP NOW </a>
-                  </div>
-
-
-                </li>
-
-              </ul>
-
+				<div className='sliderBaner'></div>
             </div>
           </div>
         </div>

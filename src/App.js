@@ -7,8 +7,11 @@ import About from "./components/About";
 import Catalog from "./components/Catalog";
 // import SingleProduct from "./components/SingleProduct";
 
+
+
 function App() {
-  return (
+
+   return (
     <>
     <HeaderMenu />
     

@@ -58,6 +58,7 @@
   <!-- jQuery KenBurn Slider  -->
   <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+ 
 
 
   <!--
@@ -65,16 +66,16 @@
   - ACTIVATE THE BANNER HERE -
 	##############################
 	-->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript" id="banerSlider">
 
-    var tpj = jQuery;
-    tpj.noConflict();
-
-    tpj(document).ready(function () {
-
-      if (tpj.fn.cssOriginal != undefined)
+  var tpj = jQuery;
+  tpj.noConflict();
+  
+  tpj(document).ready(function () {
+    
+    if (tpj.fn.cssOriginal != undefined)
         tpj.fn.css = tpj.fn.cssOriginal;
-
+        
       var api = tpj('.fullwidthbanner').revolution(
         {
           delay: 8000,
@@ -136,12 +137,12 @@
           var arrows = jQuery(this);
 
           var timer = setInterval(function () {
-
+            
             if (arrows.css('opacity') == 1 && !jQuery('.tp-simpleresponsive').hasClass("mouseisover"))
-              arrows.fadeOut(300);
+            arrows.fadeOut(300);
           }, 3000);
         })
-
+        
         jQuery('.tp-simpleresponsive, .tparrows').hover(function () {
           jQuery('.tp-simpleresponsive').addClass("mouseisover");
           jQuery('body').find('.tparrows').each(function () {
@@ -154,6 +155,6 @@
       });
       // END OF THE SECTION, HIDE MY ARROWS SEPERATLY FROM THE BULLETS
     });
-  </script>
+  </script> -->
 
 </html>
