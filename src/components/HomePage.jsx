@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-import './HomePage.css';
-
 const slide = [
 	"images/slider2.jpg",
 	"images/slider3.jpg",
@@ -11,23 +9,23 @@ const slide = [
 
 function HomePage() {
 
-	// const [curSlide, setCurSlide] = useState(0);
+	const [curSlide, setCurSlide] = useState(0);
 
-	// useEffect(()=>{
+	useEffect(()=>{
 
-	// 	const setTimeOut = setTimeout(()=>{
-	// 		setCurSlide(prevCurSlide => {
-	// 			prevCurSlide = prevCurSlide + 1;
-	// 			if(prevCurSlide > slide.length - 1) {
-	// 				prevCurSlide = 0;
-	// 			}
-	// 			return prevCurSlide;
-	// 		})
-	// 	}, 9000);
+		const setTimeOut = setTimeout(()=>{
+			setCurSlide(prevCurSlide => {
+				prevCurSlide = prevCurSlide + 1;
+				if(prevCurSlide > slide.length - 1) {
+					prevCurSlide = 0;
+				}
+				return prevCurSlide;
+			})
+		}, 25000);
 
-	// 	return ()=>clearTimeout(setTimeOut);
+		return ()=>clearTimeout(setTimeOut);
 
-	// },[curSlide]);
+	},[curSlide]);
 
   return (
     <>
@@ -36,7 +34,7 @@ function HomePage() {
         <div className="slider">
           <div className="fullwidthbanner-container mb30">
             <div className="fullwidthbanner" id="intro">
-                {/* <img style={{"width": "100%"}} src={slide[curSlide]} data-fullwidthcentering="on" alt="slide" /> */}
+                <img style={{"width": "100%"}} src={slide[curSlide]} data-fullwidthcentering="on" alt="slide" />
 
 				<div className='sliderBaner'></div>
             </div>
