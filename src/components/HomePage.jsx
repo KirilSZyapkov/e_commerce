@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 
 const slide = [
 	"images/slider2.jpg",
 	"images/slider3.jpg",
 	"images/slider5.jpg"
 ]
+
 
 
 function HomePage() {
@@ -21,7 +23,7 @@ function HomePage() {
 				}
 				return prevCurSlide;
 			})
-		}, 25000);
+		}, 8000);
 
 		return ()=>clearTimeout(setTimeOut);
 
@@ -33,7 +35,7 @@ function HomePage() {
       <div id="content" className="container">
         <div className="slider">
           <div className="fullwidthbanner-container mb30">
-            <div className="fullwidthbanner" id="intro">
+            <div style={{"height": "490.2px"}} className="fullwidthbanner" id="intro">
                 <img style={{"width": "100%"}} src={slide[curSlide]} data-fullwidthcentering="on" alt="slide" />
 
 				<div className='sliderBaner'></div>
@@ -65,7 +67,9 @@ function HomePage() {
 							<ul className="filter-container clearfix">
 								<li className="className1">
 									<div className="arrival-overlay">
+										
 										<img src="images/arrival1.jpg" alt=""/>
+										
 										<img src="images/new.png" alt="" className="new"/>
 										<div className="arrival-mask">
 											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
@@ -74,7 +78,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+										<Link to='/catalog/id'><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="low-price">$899.00</span></li>
 										</ul>
@@ -93,7 +97,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+										<Link to="/catalog/id"><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="high-price">$1.199.00</span></li>
 											<li><span className="low-price">$899.00</span></li>
@@ -112,7 +116,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+									<Link to="/catalog/id"><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="low-price">$899.00</span></li>
 										</ul>
@@ -131,7 +135,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+									<Link to="/catalog/id"><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="high-price">$1.199.00</span></li>
 											<li><span className="low-price">$899.00</span></li>
@@ -151,7 +155,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+									<Link to="/catalog/id"><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="low-price">$899.00</span></li>
 										</ul>
@@ -169,7 +173,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+									<Link to="/catalog/id"><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="low-price">$899.00</span></li>
 										</ul>
@@ -187,7 +191,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+									<Link to="/catalog/id"><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="high-price">$1.199.00</span></li>
 											<li><span className="low-price">$899.00</span></li>
@@ -206,7 +210,7 @@ function HomePage() {
 										</div>
 									</div>
 									<div className="arr-content">
-										<a href="#"><p>Brown Coat</p></a>
+									<Link to="/catalog/id"><p>Brown Coat</p></Link>
 										<ul>
 											<li><span className="high-price">$1.199.00</span></li>
 											<li><span className="low-price">$899.00</span></li>
@@ -293,7 +297,7 @@ function HomePage() {
       <div class="call-to-action">
 			<h1>You will find more items in our store.</h1>
 			<p>You can put any important text for your customer here. This is call to action area.</p>
-			<a href="#" class="medium-button button-red">go shopping</a>
+			<Link to="/catalog" class="medium-button button-red">go shopping</Link>
 		</div>
 
 		</div>
@@ -314,7 +318,7 @@ function HomePage() {
                   <div className="coll-text coll-text2">
                     <span>Fit your style</span>
                     <p>Men Suits</p>
-                    <a href="/">shop now</a>
+                    <Link to='/catalog'>shop now</Link>
                   </div>
 
                 </div>
@@ -329,7 +333,7 @@ function HomePage() {
                       <div className="coll-text">
                         <span>Latest Trends</span>
                         <p>Elegant Shoes</p>
-                        <a href="/">shop now</a>
+                        <Link to='/catalog'>shop now</Link>
                       </div>
 
                     </div>
@@ -344,7 +348,7 @@ function HomePage() {
                       <div className="coll-text">
                         <span>Comfy & stylish</span>
                         <p>Leather Bags</p>
-                        <a href="/">shop now</a>
+						<Link to='/catalog'>shop now</Link>
                       </div>
 
                     </div>
@@ -365,7 +369,7 @@ function HomePage() {
                   <div className="coll-text">
                     <span>New Arrivals</span>
                     <p>Women Dresses</p>
-                    <a href="/">shop now</a>
+                    <Link to='/catalog'>shop now</Link>
                   </div>
 
                 </div>
@@ -385,7 +389,7 @@ function HomePage() {
                   <div className="coll-text">
                     <span>New Collection</span>
                     <p>Accesories</p>
-                    <a href="/">shop now</a>
+                    <Link to='/catalog'>shop now</Link>
                   </div>
 
                 </div>
@@ -401,7 +405,7 @@ function HomePage() {
                   <div className="coll-text">
                     <span>Summer Collection</span>
                     <p>Denim Jeans</p>
-                    <a href="/">shop now</a>
+                    <Link to='/catalog'>shop now</Link>
                   </div>
 
                 </div>

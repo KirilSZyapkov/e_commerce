@@ -1155,6 +1155,7 @@ ul#navlist>li:last-child a {}
 
 .arrivals {
   padding: 60px 0 20px;
+  margin-left: -15px;
 }
 
 .arrival-overlay img {
@@ -1404,6 +1405,7 @@ ul#navlist>li:last-child a {}
 
 .blog {
   padding: 50px 0;
+  margin-left: -15px;
 }
 
 .blog-img {
