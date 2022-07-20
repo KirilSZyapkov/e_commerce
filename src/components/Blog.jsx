@@ -10,7 +10,7 @@ function Blog() {
 
             <img className='editorial-baner' src="https://www2.hm.com/content/dam/sustainability-site/praise-from-others/9501-16x9-CPD-praise-from-others.jpg" alt='' />
             
-            <h2 style={{"font-size": "99.064px"}}>Признание от другите</h2>
+            <h2 className='editorial-title' style={{"font-size": "99.064px"}}>Признание от другите</h2>
             </div>
 
         </section>
