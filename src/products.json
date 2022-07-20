@@ -3,41 +3,57 @@
         "id": 1,
         "name": "Sweeter",
         "sizes": ["S", "M", "L"],
-        "color": ["yellow", "black", "green", "blue", "red"],
+        "color": ["black", "grey", "blue", "red"],
         "material": "Wool",
         "price": 899.00,
         "image": "images/products/arrival1.jpg",
-        "category": "men"
+        "category": "men",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"puma",
+        "newItem": false
     },
     {
         "id": 2,
         "name": "Coat",
         "sizes": ["S", "L", "XL"],
-        "color": ["yellow", "black", "gray"],
+        "color": ["blue", "black", "gray"],
         "material": "Textiles",
         "price": 669.70,
         "image": "images/products/arrival2.jpg",
-        "category": "women"
+        "category": "women",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"adidas",
+        "newItem": false
     },
     {
         "id": 3,
         "name": "Blazer",
         "sizes": ["XS", "X", "M"],
-        "color": ["yellow", "black", "red"],
+        "color": ["white", "black", "red"],
         "material": "Textiles",
         "price": 550.00,
         "image": "images/products/arrival3.jpg",
-        "category": "women"
+        "category": "women",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"armani",
+        "newItem": false
     },
     {
         "id": 4,
         "name": "Jacket",
         "sizes": ["S", "M", "L"],
-        "color": ["brown", "gray"],
+        "color": ["red", "gray"],
         "material": "Leather",
         "price": 1299.00,
         "image": "images/products/arrival4.jpg",
-        "category": "women"
+        "category": "women",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"nike",
+        "newItem": false
     },
     {
         "id": 5,
@@ -47,7 +63,11 @@
         "material": "Leather",
         "price": 1099.00,
         "image": "images/products/arrival5.jpg",
-        "category": "women"
+        "category": "women",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"puma",
+        "newItem": false
     },
     {
         "id": 6,
@@ -57,7 +77,11 @@
         "material": "Jacquard",
         "price": 2899.00,
         "image": "images/products/arrival6.jpg",
-        "category": "men"
+        "category": "men",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"puma",
+        "newItem": false
     },
     {
         "id": 7,
@@ -67,7 +91,11 @@
         "material": "Denim material",
         "price": 450.00,
         "image": "images/products/arrival7.jpg",
-        "category": "women"
+        "category": "women",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"adidas",
+        "newItem": false
     },
     {
         "id": 8,
@@ -77,16 +105,24 @@
         "material": "Cotton",
         "price": 265.40,
         "image": "images/products/arrival8.jpg",
-        "category": "men"
+        "category": "men",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"adidas",
+        "newItem": false
     },
     {
         "id": 9,
         "name": "Dress",
         "sizes": ["S", "M", "L", "XL"],
-        "color": ["yellow", "pinc", "green", "blue"],
+        "color": ["grey", "blue"],
         "material": "Cotton",
         "price": 299.00,
         "image": "images/products/arrival9.jpg",
-        "category": "women"
+        "category": "women",
+        "sale": true,
+        "outOfSock": false,
+        "brands":"nike",
+        "newItem": false
     }
 ]

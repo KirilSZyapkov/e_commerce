@@ -69,7 +69,8 @@ function HomePage() {
 									<div className="arrival-overlay">
 										
 										<img src="images/arrival1.jpg" alt=""/>
-										
+										<img src="images/sale.png" alt="" className="sale"/>
+										<img src="images/out.png" alt="" className="out"/>
 										<img src="images/new.png" alt="" className="new"/>
 										<div className="arrival-mask">
 											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
