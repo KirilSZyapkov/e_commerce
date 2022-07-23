@@ -1,15 +1,21 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
+import HomePageItem from './components-items/HomePageItem';
+
 const slide = [
 	"images/slider2.jpg",
 	"images/slider3.jpg",
 	"images/slider5.jpg"
-]
+];
+
+const homePageProducts = require('../homePageProducts.json');
 
 
 
 function HomePage() {
+
+	console.log(homePageProducts);
 
 	const [curSlide, setCurSlide] = useState(0);
 
@@ -28,6 +34,7 @@ function HomePage() {
 		return ()=>clearTimeout(setTimeOut);
 
 	},[curSlide]);
+
 
   return (
     <>
@@ -65,161 +72,7 @@ function HomePage() {
 
 						<div className="demo1 clearfix">
 							<ul className="filter-container clearfix">
-								<li className="className1">
-									<div className="arrival-overlay">
-										
-										<img src="images/arrival1.jpg" alt=""/>
-										<img src="images/sale.png" alt="" className="sale"/>
-										<img src="images/out.png" alt="" className="out"/>
-										<img src="images/new.png" alt="" className="new"/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-										<Link to='/catalog/id'><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
-								<li className="className2">
-									<div className="arrival-overlay">
-										<img src="images/arrival2.jpg" alt=""/>
-										<img src="images/sale.png" alt="" className="sale"/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-										<Link to="/catalog/id"><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="high-price">$1.199.00</span></li>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
-								<li className="className3">
-									<div className="arrival-overlay">
-										<img src="images/arrival3.jpg" alt=""/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-									<Link to="/catalog/id"><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
-								<li className="className4">
-									<div className="arrival-overlay">
-										<img src="images/arrival4.jpg" alt=""/>
-										<img src="images/out.png" alt="" className="out"/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-									<Link to="/catalog/id"><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="high-price">$1.199.00</span></li>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
-								<li className="className1">
-									<div className="arrival-overlay">
-										<img src="images/arrival5.jpg" alt=""/>
-										<img src="images/sale.png" alt="" className="sale"/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-									<Link to="/catalog/id"><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
-								<li className="className2">
-									<div className="arrival-overlay">
-										<img src="images/arrival6.jpg" alt=""/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-									<Link to="/catalog/id"><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
-								<li className="className3">
-									<div className="arrival-overlay">
-										<img src="images/arrival7.jpg" alt=""/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-									<Link to="/catalog/id"><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="high-price">$1.199.00</span></li>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
-								<li className="className4">
-									<div className="arrival-overlay">
-										<img src="images/arrival8.jpg" alt=""/>
-										<div className="arrival-mask">
-											<a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-											<a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
-											{/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
-										</div>
-									</div>
-									<div className="arr-content">
-									<Link to="/catalog/id"><p>Brown Coat</p></Link>
-										<ul>
-											<li><span className="high-price">$1.199.00</span></li>
-											<li><span className="low-price">$899.00</span></li>
-										</ul>
-										
-										<div className="stars"><img src="images/stars.png" alt=""/></div>
-									</div>
-								</li>
+								{homePageProducts.map(i=><HomePageItem {...i}/>)}
 							</ul>
 						</div>
 					</div>	

@@ -31,11 +31,11 @@ function Catalog() {
 
 
 								<p>
-								  <input type="text" id="amount"/>
+								  <input type="range" min="10" max="5000" value="100" id="amount"/>
 								</p>
 
 								 
-								<div id="slider-range"></div>
+								<div id="slider-range">100</div>
 
 
 							</div>
