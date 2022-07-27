@@ -48,12 +48,8 @@ function Footer() {
 				<div className="last-div">
 					<div className="row">
 						<div className="copyright">
-							© 2014 SweetPick Elegant Shop
+							© SweetPick Elegant Shop
 						</div>
-						<div className="payment">
-							<a href="#"><img src="upload/payments.png" alt=""/></a>
-						</div>
-						<div className="clear"></div>
 					</div>
 
 				</div>
