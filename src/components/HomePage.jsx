@@ -13,8 +13,12 @@ const slide = [
 
 function HomePage() {
 
-  const [items, setItems] = useState(homePageProducts);
+  const [items, setItems] = useState([]);
 	const [curSlide, setCurSlide] = useState(0);
+
+  useEffect(()=>{
+    setItems(homePageProducts);
+  },[]);
 
 	useEffect(()=>{
 
@@ -33,6 +37,7 @@ function HomePage() {
 	},[curSlide]);
 
 	function filterProduct(e){
+    
 		const target = e.target.dataset.filter;
     setItems(homePageProducts);
     
