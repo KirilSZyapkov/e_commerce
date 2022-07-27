@@ -3,20 +3,17 @@ import {Link} from 'react-router-dom';
 
 import HomePageItem from './components-items/HomePageItem';
 
+import homePageProducts from '../data/homePageProducts.json';
+
 const slide = [
 	"images/slider2.jpg",
 	"images/slider3.jpg",
 	"images/slider5.jpg"
 ];
 
-const homePageProducts = require('../homePageProducts.json');
-
-
-
 function HomePage() {
 
-	console.log(homePageProducts);
-
+  const [items, setItems] = useState(homePageProducts);
 	const [curSlide, setCurSlide] = useState(0);
 
 	useEffect(()=>{
@@ -34,6 +31,22 @@ function HomePage() {
 		return ()=>clearTimeout(setTimeOut);
 
 	},[curSlide]);
+
+	function filterProduct(e){
+		const target = e.target.dataset.filter;
+    setItems(homePageProducts);
+    
+    setItems(currItems => {
+      if(target === "*") return setItems(homePageProducts);;
+
+      if(target === "new"){
+        return currItems.filter(item => item.newItem === true);
+      } else if(target === "sale") {
+        return currItems.filter(item => item.sale === true);
+      }
+    })
+
+	}
 
 
   return (
@@ -60,10 +73,9 @@ function HomePage() {
 						<div className="filter clearfix">
 							<div className="holder">
 								<ul>
-									<li><a href="#" className="active" data-filter="*">All</a></li>
-									<li><a href="#" data-filter=".className1"><i className="fa fa-star"></i> NEW ARRIVALS</a></li>
-									<li><a href="#" data-filter=".className2"><i className="fa fa-star"></i> BESTSELLERS</a></li>
-									<li><a href="#" data-filter=".className3"><i className="fa fa-star"></i> FEATURED <i className="fa fa-star"></i></a></li>
+									<li><p onClick={filterProduct} className="active" data-filter="*">All</p></li>
+									<li><p onClick={filterProduct} data-filter="new"><i className="fa fa-star"></i> NEW ARRIVALS</p></li>
+									<li><p onClick={filterProduct} data-filter="sale"><i className="fa fa-star"></i> BESTSELLERS</p></li>
 								</ul>
 								<div className="holder-border"></div>
 							</div>
@@ -72,7 +84,7 @@ function HomePage() {
 
 						<div className="demo1 clearfix">
 							<ul className="filter-container clearfix">
-								{homePageProducts.map(i=><HomePageItem {...i}/>)}
+								{items?.map(i=><HomePageItem key={i.id} {...i}/>)}
 							</ul>
 						</div>
 					</div>	
@@ -105,12 +117,12 @@ function HomePage() {
 						<div className="col-md-4">
 							<div className="blog-item">
 								<div className="blog-img">
-									<a href="#"><img src="images/blog1.jpg" alt=""/></a>
+									<Link to="/blog"><img src="images/blog1.jpg" alt=""/></Link>
 									<div className="calendar">
 										<p>02</p>
 										<span>dec</span>	
 									</div>
-									<a href="#"><h3>This is blog post title. You can edit.</h3></a>
+									<Link to="/blog"><h3>This is blog post title. You can edit.</h3></Link>
 									<div className="blog-border"></div>
 									<p>We possess within us two minds. So far I have written only of the conscious mind.</p>
 								</div>
@@ -119,12 +131,12 @@ function HomePage() {
 						<div className="col-md-4">
 							<div className="blog-item">
 								<div className="blog-img">
-									<a href="#"><img src="images/blog2.jpg" alt=""/></a>
+									<Link to="/blog"><img src="images/blog2.jpg" alt=""/></Link>
 									<div className="calendar">
 										<p>12</p>
 										<span>jan</span>	
 									</div>
-									<a href="#"><h3>This is blog post with a gallery.</h3></a>
+									<Link to="/blog"><h3>This is blog post with a gallery.</h3></Link>
 									<div className="blog-border"></div>
 									<p>We possess within us two minds. So far I have written only of the conscious mind.</p>
 								</div>
@@ -133,12 +145,12 @@ function HomePage() {
 						<div className="col-md-4">
 							<div className="blog-item">
 								<div className="blog-img">
-									<a href="#"><img src="images/blog3.jpg" alt=""/></a>
+									<Link to="/blog"><img src="images/blog3.jpg" alt=""/></Link>
 									<div className="calendar">
 										<p>18</p>
 										<span>MAr</span>	
 									</div>
-									<a href="#"><h3>5 reasons to buy this Gorgeous theme.</h3></a>
+									<Link to="/blog"><h3>5 reasons to buy this Gorgeous theme.</h3></Link>
 									<div className="blog-border"></div>
 									<p>We possess within us two minds. So far I have written only of the conscious mind.</p>
 								</div>
@@ -148,10 +160,10 @@ function HomePage() {
 				</div>
 			</div>
 
-      <div class="call-to-action">
+      <div className="call-to-action">
 			<h1>You will find more items in our store.</h1>
 			<p>You can put any important text for your customer here. This is call to action area.</p>
-			<Link to="/catalog" class="medium-button button-red">go shopping</Link>
+			<Link to="/catalog" className="medium-button button-red">go shopping</Link>
 		</div>
 
 		</div>
@@ -187,7 +199,7 @@ function HomePage() {
                       <div className="coll-text">
                         <span>Latest Trends</span>
                         <p>Elegant Shoes</p>
-                        <Link to='/catalog'>shop now</Link>
+                        <Link to='/accesories'>shop now</Link>
                       </div>
 
                     </div>
@@ -202,7 +214,7 @@ function HomePage() {
                       <div className="coll-text">
                         <span>Comfy & stylish</span>
                         <p>Leather Bags</p>
-						<Link to='/catalog'>shop now</Link>
+						            <Link to='/accesories'>shop now</Link>
                       </div>
 
                     </div>
@@ -243,7 +255,7 @@ function HomePage() {
                   <div className="coll-text">
                     <span>New Collection</span>
                     <p>Accesories</p>
-                    <Link to='/catalog'>shop now</Link>
+                    <Link to='/accesories'>shop now</Link>
                   </div>
 
                 </div>
@@ -280,7 +292,7 @@ function HomePage() {
                 <div className="red-box">
                   <span>Mega Winter Sales</span>
                   <p>40% off</p>
-                  <a href="/" className="learn-more">Learn More</a>
+                  <Link to="/blog" className="learn-more">Learn More</Link>
                 </div>
               </div>
               <div className="col-md-4">

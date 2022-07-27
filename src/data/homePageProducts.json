@@ -8,7 +8,7 @@
     "price": 899.00,
     "image": "images/products/arrival1.jpg",
     "category": "men",
-    "sale": true,
+    "sale": false,
     "outOfStock": false,
     "brands":"puma",
     "newItem": true
@@ -53,7 +53,7 @@
     "sale": true,
     "outOfStock": false,
     "brands":"nike",
-    "newItem": true
+    "newItem": false
 },
 {
     "id": 5,
@@ -106,7 +106,7 @@
     "price": 265.40,
     "image": "images/products/arrival8.jpg",
     "category": "men",
-    "sale": true,
+    "sale": false,
     "outOfStock": false,
     "brands":"adidas",
     "newItem": true

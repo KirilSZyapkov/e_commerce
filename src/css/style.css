@@ -168,6 +168,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: 0.9s;
 }
 
 body {
@@ -1184,13 +1185,14 @@ ul#navlist>li:last-child a {}
   position: relative;
 }
 
-.filter a {
+.filter p {
   color: #919191;
   font-size: 20px;
   font-family: 'Noticia Text';
   font-weight: bold;
   text-transform: uppercase;
   display: block;
+  cursor: pointer;
 }
 
 .filter i {
@@ -1200,7 +1202,7 @@ ul#navlist>li:last-child a {}
 }
 
 
-.filter a.active {
+.filter p.active {
   color: #000;
 }
 

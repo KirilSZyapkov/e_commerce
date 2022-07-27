@@ -1,11 +1,10 @@
 import React from 'react';
 import CatalogGrid from './components-items/CatalogGrid';
 
-const productList = require('../products.json');
+import products from '../data/products.json';
 
 function Catalog() {
     
-    console.log(productList);
     return (
       <div id="content">
 			<div class="shop-main container">
@@ -31,7 +30,7 @@ function Catalog() {
 
 
 								<p>
-								  <input type="range" min="10" max="5000" value="100" id="amount"/>
+								  <input type="range" min="10" max="5000" defaultValue="100" id="amount"/>
 								</p>
 
 								 
