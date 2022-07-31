@@ -115,7 +115,7 @@ function HeaderMenu() {
                                     <div className="quantity">Quantity: 1</div>
                                 </div>
 
-                                <a href="/" className="right-hover"><img src="../../images/delete.png" alt="" /></a>
+                                <a href="/" className="right-hover"><img src="../../images/delete.png" alt="" />X</a>
 
                                 <div className="clear"></div>
 
