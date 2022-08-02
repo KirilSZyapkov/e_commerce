@@ -42,7 +42,9 @@ function HomePage() {
     setItems(homePageProducts);
     
     setItems(currItems => {
-      if(target === "*") return setItems(homePageProducts);;
+      if(target === "*") {
+        return setItems(homePageProducts)
+      };
 
       if(target === "new"){
         return currItems.filter(item => item.newItem === true);
@@ -78,7 +80,7 @@ function HomePage() {
 						<div className="filter clearfix">
 							<div className="holder">
 								<ul>
-									<li><p onClick={filterProduct} className="active" data-filter="*">All</p></li>
+									<li><p onClick={filterProduct} data-filter="*">All</p></li>
 									<li><p onClick={filterProduct} data-filter="new"><i className="fa fa-star"></i> NEW ARRIVALS</p></li>
 									<li><p onClick={filterProduct} data-filter="sale"><i className="fa fa-star"></i> BESTSELLERS</p></li>
 								</ul>
