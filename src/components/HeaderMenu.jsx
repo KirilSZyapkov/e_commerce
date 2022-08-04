@@ -1,7 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 
 function HeaderMenu() {
+
+    const {cartQuantity} = useShoppingCart();
+
     return (
         <header className="clearfix">
            
@@ -98,15 +102,13 @@ function HeaderMenu() {
                         <a href="index.html"><img src="images/logo.png" alt="" /></a>
                     </div>
 
-                    <div className="cart">
+                    {cartQuantity != 0 && <div className="cart">
                         <a href="/" className="cartmain"> Cart / $ 1 199.00</a>
                         <div className="card-icon">
                             <img src="images/cart.png" alt="" />
-                            <div className="shop-items">10</div>
+                            <div className="shop-items">{cartQuantity}</div>
                         </div>
                         <div className="hover-cart">
-
-                            
 
                             <div className="hover-box bd0">
 
@@ -131,7 +133,7 @@ function HeaderMenu() {
                             <button className="proceedcard"> Proceed</button>
 
                         </div>
-                    </div>
+                    </div>}
 
                     <div className="clear"></div>
 

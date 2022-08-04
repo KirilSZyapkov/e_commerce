@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { useShoppingCart } from '../../context/ShoppingCartContext';
 
 function HomePageItem({
     name,
@@ -9,6 +10,8 @@ function HomePageItem({
     outOfStock,
     newItem
 }) {
+
+    const {increaseCartQuantity, decreaseCartQuantity}  = useShoppingCart
   return (
         <li className="className1">
             <div className="arrival-overlay">
