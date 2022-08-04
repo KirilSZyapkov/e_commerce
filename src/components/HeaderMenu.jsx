@@ -2,9 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { useShoppingCart } from '../context/ShoppingCartContext';
 
+import CartItem from './components-items/CartItem';
+
 function HeaderMenu() {
 
-    const {cartQuantity} = useShoppingCart();
+    const {cartQuantity, cartItems} = useShoppingCart();
 
     return (
         <header className="clearfix">
@@ -102,28 +104,17 @@ function HeaderMenu() {
                         <a href="index.html"><img src="images/logo.png" alt="" /></a>
                     </div>
 
-                    {cartQuantity != 0 && <div className="cart">
-                        <a href="/" className="cartmain"> Cart / $ 1 199.00</a>
+                    {!cartQuantity != 0 && <div className="cart">
+                        <a href="/" className="cartmain"> Cart </a>
                         <div className="card-icon">
                             <img src="images/cart.png" alt="" />
                             <div className="shop-items">{cartQuantity}</div>
                         </div>
                         <div className="hover-cart">
 
-                            <div className="hover-box bd0">
-
-                                <img src="../../images/hover2.png" alt="" className="left-hover" />
-                                <div className="hover-details">
-                                    <p>Grey California Dress</p>
-                                    <span>$ 3 199.00</span>
-                                    <div className="quantity">Quantity: 1</div>
-                                </div>
-
-                                <a href="/" className="right-hover"><img src="../../images/delete.png" alt="" /></a>
-
-                                <div className="clear"></div>
-
-                            </div>
+                            {cartItems.map(item => {
+                                <CartItem key={item.id} {...item} />
+                            })}
 
                             <div className="subtotal">
                                 Cart Subtotal: <span>$ 4 372</span>

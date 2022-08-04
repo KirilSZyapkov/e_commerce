@@ -1,14 +1,25 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-function CartItem() {
+import products from "../../data/products.json";
+
+function CartItem({
+  id,
+  quantity
+}) {
+
+  const item = products.find(i => i.id === id);
+
+  if (item === null) return null;
+
   return (
     <div className="hover-box">
 
-        <a href="/"><img src="../../images/hover1.png" alt="" className="left-hover" /></a>
+        <Link href="/"><img src="../../images/hover1.png" alt="" className="left-hover" /></Link>
             <div className="hover-details">
-                <p>Grey California Dress</p>
-                <span>$ 3 199.00</span>
-                    <div className="quantity">Quantity: 1</div>
+                <p>{item.name}</p>
+                <span>$ {item.price}</span>
+                    <div className="quantity">Quantity: {quantity}</div>
             </div>
 
         <a href="/" className="right-hover"><img src="../../images/delete.png" alt="" />X</a>
