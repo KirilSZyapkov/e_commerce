@@ -1246,7 +1246,7 @@ ul#navlist>li:last-child a {}
 
 
 
-.add-cart {
+.buttons-group {
   margin: 35% auto 20px;
 }
 
@@ -5343,6 +5343,7 @@ aside .blog-search input[type="submit"] {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  margin: 35% auto 20px;
 }
 
 .small-button {
