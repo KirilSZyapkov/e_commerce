@@ -881,6 +881,10 @@ ul#navlist>li {
   color: #ea5748 !important;
 }
 
+.curr-fill {
+  color: black !important;
+}
+
 ul#navlist li a {
   display: inline-block;
   text-decoration: none;

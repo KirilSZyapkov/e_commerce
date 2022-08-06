@@ -87,7 +87,7 @@ function HomePage() {
                         <p
                           onClick={filterProduct}
                           data-filter="*"
-                          className={active === "*" ? "active" : ""}
+                          className={active === "*" ? "curr-fill" : ""}
                         >
                           All
                         </p>
@@ -96,7 +96,7 @@ function HomePage() {
                         <p
                           onClick={filterProduct}
                           data-filter="new"
-                          className={active === "new" ? "active" : ""}
+                          className={active === "new" ? "curr-fill" : ""}
                         >
                           <i className="fa fa-star"></i> NEW ARRIVALS
                         </p>
@@ -105,7 +105,7 @@ function HomePage() {
                         <p
                           onClick={filterProduct}
                           data-filter="sale"
-                          className={active === "sale" ? "active" : ""}
+                          className={active === "sale" ? "curr-fill" : ""}
                         >
                           <i className="fa fa-star"></i> BESTSELLERS
                         </p>
