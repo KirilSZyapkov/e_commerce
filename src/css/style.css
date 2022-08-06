@@ -1257,6 +1257,7 @@ ul#navlist>li:last-child a {}
   font-style: italic;
   display: block;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .wishlist:hover {
@@ -5341,6 +5342,7 @@ aside .blog-search input[type="submit"] {
   font-family: 'Merriweather';
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .small-button {

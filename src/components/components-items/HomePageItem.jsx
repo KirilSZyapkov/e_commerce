@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import { useShoppingCart } from '../../context/ShoppingCartContext';
 
 function HomePageItem({
+    id,
     name,
     price,
     image,
@@ -11,7 +12,9 @@ function HomePageItem({
     newItem
 }) {
 
-    const {increaseCartQuantity, decreaseCartQuantity}  = useShoppingCart
+const {increaseCartQuantity}  = useShoppingCart();
+
+
   return (
         <li className="className1">
             <div className="arrival-overlay">
@@ -21,13 +24,13 @@ function HomePageItem({
                 {outOfStock && <img src="images/out.png" alt="" className="out"/>}
                 {newItem && <img src="images/new.png" alt="" className="new"/>}
                     <div className="arrival-mask">
-                        <a href="#" className="medium-button button-red add-cart">Add to Cart</a>
-                        <a href="#" className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</a>
+                        <p onClick={() => increaseCartQuantity(id)} className="medium-button button-red add-cart">Add to Cart</p>
+                        <p className="wishlist"><i className="fa fa-heart"></i> Add to Wishlist</p>
                         {/* <a href="#" className="compare"><i className="fa fa-retweet"></i>Add to Compare</a> */}
                     </div>
             </div>
             <div className="arr-content">
-                <Link to='/catalog/id'><p>{name}</p></Link>
+                    <Link to={`/catalog/${id}`} ><p>{name}</p></Link>
                     <ul>
                         <li><span className="low-price">${price}</span></li>
                     </ul>

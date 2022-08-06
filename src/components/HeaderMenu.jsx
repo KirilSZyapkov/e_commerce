@@ -104,7 +104,7 @@ function HeaderMenu() {
                         <a href="index.html"><img src="images/logo.png" alt="" /></a>
                     </div>
 
-                    {!cartQuantity != 0 && <div className="cart">
+                    {cartQuantity !== 0 && <div className="cart">
                         <a href="/" className="cartmain"> Cart </a>
                         <div className="card-icon">
                             <img src="images/cart.png" alt="" />
@@ -112,9 +112,7 @@ function HeaderMenu() {
                         </div>
                         <div className="hover-cart">
 
-                            {cartItems.map(item => {
-                                <CartItem key={item.id} {...item} />
-                            })}
+                            {cartItems.map(item => <CartItem key={item.id} {...item} />)}
 
                             <div className="subtotal">
                                 Cart Subtotal: <span>$ 4 372</span>

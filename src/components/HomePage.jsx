@@ -32,7 +32,7 @@ function HomePage() {
 			})
 		}, 8000);
 
-		return ()=>clearTimeout(setTimeOut);
+		return () => clearTimeout(setTimeOut);
 
 	},[curSlide]);
 
@@ -91,7 +91,7 @@ function HomePage() {
 
 						<div className="demo1 clearfix">
 							<ul className="filter-container clearfix">
-								{items?.map(i=><HomePageItem key={i.id} {...i}/>)}
+								{items?.map(i => <HomePageItem key={i.id} {...i} />)}
 							</ul>
 						</div>
 					</div>	
