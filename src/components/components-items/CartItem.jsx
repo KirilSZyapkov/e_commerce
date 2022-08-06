@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { useShoppingCart } from "../../context/ShoppingCartContext";
+
 function CartItem({ id, quantity, products }) {
+  const { removeFromCart } = useShoppingCart();
   const item = products.find((i) => i.id === id);
 
   if (item === null) return null;
@@ -17,8 +20,8 @@ function CartItem({ id, quantity, products }) {
         <div className="quantity">Quantity: {quantity}</div>
       </div>
 
-      <a className="right-hover">
-        <img src="../../images/delete.png" alt="" />X
+      <a onClick={() => removeFromCart(id)} className="right-hover">
+        X
       </a>
 
       <div className="clear"></div>

@@ -776,6 +776,7 @@ form.signin input::-webkit-input-placeholder {
 
 .right-hover {
   width: 10%;
+  cursor: pointer;
 }
 
 .hover-cart p {
