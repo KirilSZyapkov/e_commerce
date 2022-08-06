@@ -155,7 +155,7 @@ function HeaderMenu() {
                         const foundItem = products.find(
                           (i) => i.id === item.id
                         );
-                        if (foundItem === undefined) return;
+                        if (foundItem === undefined) return null;
                         return foundItem.price * item.quantity;
                       })
                       .reduce((prevItem, nextItem) => prevItem + nextItem, 0)}
@@ -177,12 +177,12 @@ function HeaderMenu() {
           <nav id="nav">
             <ul id="navlist" className="sf-menu clearfix">
               <li>
-                <NavLink exact to="/" activeClassName="current">
+                <NavLink exact to="/">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink exact to="/catalog" activeClassName="current">
+                <NavLink exact to="/catalog">
                   Shop
                 </NavLink>
               </li>

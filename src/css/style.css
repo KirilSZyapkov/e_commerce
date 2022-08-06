@@ -877,6 +877,9 @@ ul#navlist>li {
   margin: 0 0px;
 }
 
+.active {
+  color: #ea5748 !important;
+}
 
 ul#navlist li a {
   display: inline-block;
@@ -895,7 +898,7 @@ ul#navlist li a {
 }
 
 
-ul#navlist>li.current a,
+ul#navlist>li.active a,
 ul#navlist li a:hover {
   color: #ea5748;
 }
@@ -1545,7 +1548,7 @@ ul#navlist>li:last-child a {}
   color: #fff;
 }
 
-.trans-header ul#navlist li.current a,
+.trans-header ul#navlist li.active a,
 ul#navlist li a:hover {
   color: #ea5748;
 }
@@ -3719,9 +3722,9 @@ a.load-more:hover {
 }
 
 
-.check-anchor li.active a {
+/* .check-anchor li.active a {
   color: #000;
-}
+} */
 
 
 .check-details .table {
