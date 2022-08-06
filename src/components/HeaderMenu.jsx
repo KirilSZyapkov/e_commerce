@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 import CartItem from "./components-items/CartItem";
@@ -57,14 +57,6 @@ function HeaderMenu() {
                 </a>
               </li>
             </ul>
-            <div className="mobile-version">
-              <div className="cart-icon">
-                <a href="/">
-                  <img src="../../images/cart-white.png" alt="" />
-                  <span>8 Items</span>
-                </a>
-              </div>
-            </div>
 
             <div id="login-box" className="login-popup">
               <a href="/" className="close">
@@ -184,29 +176,35 @@ function HeaderMenu() {
         <div className="nocontainer bannerborder">
           <nav id="nav">
             <ul id="navlist" className="sf-menu clearfix">
-              <li className="current">
-                <Link to="/">Home</Link>
+              <li>
+                <NavLink exact to="/" activeClassName="current">
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/catalog">Shop</Link>
+                <NavLink exact to="/catalog" activeClassName="current">
+                  Shop
+                </NavLink>
               </li>
               <li>
-                <Link to="/women">Women</Link>
+                <NavLink exact to="/accesories">
+                  Accesories
+                </NavLink>
               </li>
               <li>
-                <Link to="/men">Men</Link>
+                <NavLink exact to="/about-us">
+                  About
+                </NavLink>
               </li>
               <li>
-                <Link to="/accesories">Accesories</Link>
+                <NavLink exact to="/blog">
+                  Blog
+                </NavLink>
               </li>
               <li>
-                <Link to="/about-us">About</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/contact-us">Contact</Link>
+                <NavLink exact to="/contact-us">
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </nav>
