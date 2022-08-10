@@ -226,13 +226,13 @@ function Catalog() {
               {displayProducts === "grid" ? (
                 <div className="row shop-grid">
                   {products.map((p) => (
-                    <CatalogGrid products={p} />
+                    <CatalogGrid key={p.id} {...p} />
                   ))}
                 </div>
               ) : (
                 <div class="shop-list">
                   {products.map((p) => (
-                    <CatalogList products={p} />
+                    <CatalogList key={p.id} {...p} />
                   ))}
                 </div>
               )}

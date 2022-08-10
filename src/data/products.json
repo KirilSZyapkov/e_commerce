@@ -9,7 +9,7 @@
         "image": "images/products/arrival1.jpg",
         "category": "men",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": false,
         "brands":"puma",
         "newItem": false
     },
@@ -23,7 +23,7 @@
         "image": "images/products/arrival2.jpg",
         "category": "women",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": false,
         "brands":"adidas",
         "newItem": false
     },
@@ -37,7 +37,7 @@
         "image": "images/products/arrival3.jpg",
         "category": "women",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": true,
         "brands":"armani",
         "newItem": false
     },
@@ -51,7 +51,7 @@
         "image": "images/products/arrival4.jpg",
         "category": "women",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": false,
         "brands":"nike",
         "newItem": false
     },
@@ -65,7 +65,7 @@
         "image": "images/products/arrival5.jpg",
         "category": "women",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": false,
         "brands":"puma",
         "newItem": false
     },
@@ -79,7 +79,7 @@
         "image": "images/products/arrival6.jpg",
         "category": "men",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": true,
         "brands":"puma",
         "newItem": false
     },
@@ -93,7 +93,7 @@
         "image": "images/products/arrival7.jpg",
         "category": "women",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": false,
         "brands":"adidas",
         "newItem": false
     },
@@ -107,7 +107,7 @@
         "image": "images/products/arrival8.jpg",
         "category": "men",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": false,
         "brands":"adidas",
         "newItem": false
     },
@@ -121,7 +121,7 @@
         "image": "images/products/arrival9.jpg",
         "category": "women",
         "sale": true,
-        "outOfSock": false,
+        "outOfStock": false,
         "brands":"nike",
         "newItem": false
     }
