@@ -13,37 +13,45 @@
 @import "../src/css/settings.css";
 
 .grid {
-    display: grid;
-    grid-template-columns: 585px 585px;
+  display: grid;
+  grid-template-columns: 585px 585px;
 }
 
 .f-about {
-    height: 249.6px;
+  height: 249.6px;
 }
 
 .mb20 {
-    line-height: 1.9;
+  line-height: 1.9;
 }
 
-.editorialHero{
-    position: relative;
-    
+.editorialHero {
+  position: relative;
 }
 
 .editorial-title {
-    position: absolute;
-    top: 38%;
-    color: white;
-    right: 10%;
-    opacity: 0;
-    transition: .8s;
+  position: absolute;
+  top: 38%;
+  color: white;
+  right: 10%;
+  opacity: 0;
+  transition: 0.8s;
 }
 
 .editorialHero:hover .editorial-title {
-    opacity: 1;
+  opacity: 1;
 }
 
-.editorial-baner{
-    width: 100%;
-    height: 70%;
+.editorial-baner {
+  width: 100%;
+  height: 70%;
+}
+
+.grid-btn,
+.list-btn {
+  padding: 1px;
+  font-size: 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: transparent;
 }

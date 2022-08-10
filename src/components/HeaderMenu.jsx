@@ -118,12 +118,12 @@ function HeaderMenu() {
 
       <div className="upper-header container">
         <div className="nocontainer">
-          <div className="search-input">
+          {/* <div className="search-input">
             <form>
               <input type="text" placeholder="Type and Search" />
               <input type="submit" value="" />
             </form>
-          </div>
+          </div> */}
 
           <div className="logo">
             <Link to="/">
