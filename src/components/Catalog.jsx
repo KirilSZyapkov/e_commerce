@@ -3,10 +3,24 @@ import CatalogGrid from "./components-items/CatalogGrid";
 import CatalogList from "./components-items/CatalogList";
 
 import products from "../data/products.json";
+import { Link } from "react-router-dom";
 
 function Catalog() {
   const [displayProducts, setDisplayProducts] = useState("grid");
   const [activeDisplay, setActiveDisplay] = useState("grid");
+  const [productsPerPage] = useState(12);
+
+  const totalPages = Math.ceil(products.length / productsPerPage);
+  const itemToShow = products.slice(0, productsPerPage);
+
+  let pages = [];
+  for (let a = 1; a <= totalPages; a++) {
+    pages.push(a);
+  }
+
+  function showHandle(e) {
+    console.log(e.target.textContent);
+  }
 
   function chageView(e) {
     const target = e.target.parentElement.id;
@@ -38,26 +52,6 @@ function Catalog() {
                   <li>
                     <a href="#">
                       Men <span>(235)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Bags <span>(89)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Shoes <span>(109)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Jeans <span>(129)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Accessories <span>(123)</span>
                     </a>
                   </li>
                 </ul>
@@ -187,7 +181,7 @@ function Catalog() {
                   <label>Sort by</label>
                   <select className="selectBox">
                     <option>Default Sorting</option>
-                    <option>Price</option>
+                    <option>By Name</option>
                     <option>High To Low</option>
                     <option>Low To High</option>
                   </select>
@@ -195,9 +189,9 @@ function Catalog() {
                 <div className="sort-select">
                   <label>Show</label>
                   <select className="selectBox">
-                    <option>12</option>
-                    <option>16</option>
-                    <option>20</option>
+                    <option onClick={showHandle}>{productsPerPage}</option>
+                    <option onClick={showHandle}>{productsPerPage}</option>
+                    <option onClick={showHandle}>{productsPerPage}</option>
                   </select>
                 </div>
                 <div className="lg-panel htabs">
@@ -225,13 +219,13 @@ function Catalog() {
 
               {displayProducts === "grid" ? (
                 <div className="row shop-grid">
-                  {products.map((p) => (
+                  {itemToShow.map((p) => (
                     <CatalogGrid key={p.id} {...p} />
                   ))}
                 </div>
               ) : (
-                <div class="shop-list">
-                  {products.map((p) => (
+                <div className="shop-list">
+                  {itemToShow.map((p) => (
                     <CatalogList key={p.id} {...p} />
                   ))}
                 </div>
@@ -239,43 +233,23 @@ function Catalog() {
 
               <div className="shop-pag">
                 <p className="pag-p">
-                  Items <span>1 to 12</span> of {products.length} Total
+                  Items <span>1 to {productsPerPage}</span> of {totalPages}{" "}
+                  Total
                 </p>
 
                 <div className="right-pag">
-                  <div className="sort-select">
-                    <label>Show</label>
-                    <select className="selectBox">
-                      <option>12</option>
-                      <option>24</option>
-                      <option>36</option>
-                    </select>
-                  </div>
-
                   <div className="pagenation clearfix">
                     <ul>
-                      <li className="active">
-                        <a href="#">1</a>
-                      </li>
-                      <li>
-                        <a href="#">2</a>
-                      </li>
-                      <li>
-                        <a href="#">3</a>
-                      </li>
-                      <li>
-                        <a href="#">4</a>
-                      </li>
-                      <li>
-                        <a href="#">5</a>
-                      </li>
-                      <li>
-                        <a href="#">&gt;</a>
-                      </li>
+                      {pages.map((item, i) => (
+                        <li key={i} className="active">
+                          <Link to="#">{item}</Link>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div className="clear"></div>
                 </div>
+
                 <div className="clear"></div>
               </div>
             </div>

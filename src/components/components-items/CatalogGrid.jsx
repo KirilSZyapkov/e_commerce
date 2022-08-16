@@ -1,20 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function CatalogGrid({
-  id,
-  name,
-  sizes,
-  color,
-  material,
-  price,
-  image,
-  category,
-  sale,
-  outOfStock,
-  brands,
-  newItem,
-}) {
-  console.log(outOfStock);
+import { useShoppingCart } from "../../context/ShoppingCartContext";
+
+function CatalogGrid({ id, name, price, image, sale, outOfStock, newItem }) {
+  const { increaseCartQuantity } = useShoppingCart();
+
   return (
     <>
       <div className="col-md-4 grid-item mb30">
@@ -30,7 +21,12 @@ function CatalogGrid({
           <div className="arrival-mask">
             <div className="buttons-group">
               {!outOfStock && (
-                <p className="medium-button button-red">Add to Cart</p>
+                <p
+                  onClick={() => increaseCartQuantity(id)}
+                  className="medium-button button-red"
+                >
+                  Add to Cart
+                </p>
               )}
               <p className="wishlist">
                 <i className="fa fa-heart"></i> Add to Wishlist
@@ -42,7 +38,7 @@ function CatalogGrid({
           </div>
         </div>
         <div className="arr-content">
-          <p>{name}</p>
+          <Link to={`/catalog/${id}`}>{name}</Link>
           <ul>
             <li>
               <span className="low-price">${price}</span>
