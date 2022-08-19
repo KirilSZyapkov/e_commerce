@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function Catalog() {
   const [displayProducts, setDisplayProducts] = useState("grid");
   const [activeDisplay, setActiveDisplay] = useState("grid");
-  const [productsPerPage] = useState(12);
+  const [productsPerPage, setProductsPerPage] = useState(12);
 
   const totalPages = Math.ceil(products.length / productsPerPage);
   const itemToShow = products.slice(0, productsPerPage);
@@ -18,9 +18,7 @@ function Catalog() {
     pages.push(a);
   }
 
-  function showHandle(e) {
-    console.log(e.target.textContent);
-  }
+  console.log(productsPerPage);
 
   function chageView(e) {
     const target = e.target.parentElement.id;
@@ -189,9 +187,9 @@ function Catalog() {
                 <div className="sort-select">
                   <label>Show</label>
                   <select className="selectBox">
-                    <option onClick={showHandle}>{productsPerPage}</option>
-                    <option onClick={showHandle}>{productsPerPage}</option>
-                    <option onClick={showHandle}>{productsPerPage}</option>
+                    <option onClick={() => setProductsPerPage(12)}>12</option>
+                    <option onClick={() => setProductsPerPage(16)}>16</option>
+                    <option onClick={() => setProductsPerPage(18)}>18</option>
                   </select>
                 </div>
                 <div className="lg-panel htabs">
