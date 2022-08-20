@@ -13,20 +13,25 @@ function Catalog() {
     products.slice(startIndex, productsPerPage)
   );
   const [selectedPage, setSelectedPage] = useState(1);
+  const [sortType, setSortType] = useState("");
 
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   useEffect(() => {
-    console.log(selectedPage);
+    console.log(sortType === "High To Low");
     const endIndex = productsPerPage * selectedPage;
-    console.log("end " + endIndex);
-
     const list = products.slice(startIndex, endIndex);
-    console.log(products);
+    if (sortType === "By Name") {
+      list.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (sortType === "High To Low") {
+      console.log(list);
+      list.sort((a, b) => Number(b.price) - Number(a.price));
+      console.log(list);
+    } else if (sortType === "Low To High") {
+      list.sort((a, b) => Number(a.price) - Number(b.price));
+    }
     setItemToShow(list);
-  }, [startIndex, selectedPage]);
-
-  console.log(itemToShow);
+  }, [startIndex, selectedPage, sortType]);
 
   let pages = [];
   for (let a = 1; a <= totalPages; a++) {
@@ -56,7 +61,6 @@ function Catalog() {
       setStartIndex((num - 1) * productsPerPage);
     }
   }
-  console.log(startIndex);
 
   return (
     <div id="content">
@@ -204,10 +208,34 @@ function Catalog() {
                 <div className="sort-select">
                   <label>Sort by</label>
                   <select className="selectBox">
-                    <option>Default Sorting</option>
-                    <option>By Name</option>
-                    <option>High To Low</option>
-                    <option>Low To High</option>
+                    <option
+                      onClick={(e) => {
+                        setSortType(e.target.textContent);
+                      }}
+                    >
+                      Default Sorting
+                    </option>
+                    <option
+                      onClick={(e) => {
+                        setSortType(e.target.textContent);
+                      }}
+                    >
+                      By Name
+                    </option>
+                    <option
+                      onClick={(e) => {
+                        setSortType(e.target.textContent);
+                      }}
+                    >
+                      High To Low
+                    </option>
+                    <option
+                      onClick={(e) => {
+                        setSortType(e.target.textContent);
+                      }}
+                    >
+                      Low To High
+                    </option>
                   </select>
                 </div>
                 <div className="sort-select">
@@ -257,8 +285,11 @@ function Catalog() {
 
               <div className="shop-pag">
                 <p className="pag-p">
-                  Items <span>1 to {productsPerPage}</span> of {totalPages}{" "}
-                  Total
+                  Items{" "}
+                  <span>
+                    {startIndex || 1} to {productsPerPage * selectedPage}
+                  </span>{" "}
+                  of {products.length} Total
                 </p>
 
                 <div className="right-pag">
