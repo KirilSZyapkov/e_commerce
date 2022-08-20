@@ -14,13 +14,24 @@ function Catalog() {
   );
   const [selectedPage, setSelectedPage] = useState(1);
   const [sortType, setSortType] = useState("");
-
-  const totalPages = Math.ceil(products.length / productsPerPage);
+  const [categories, setCategories] = useState("all");
+  const [totalPages, setTotalPages] = useState(
+    Math.ceil(products.length / productsPerPage)
+  );
 
   useEffect(() => {
-    console.log(products);
     const endIndex = productsPerPage * selectedPage;
-    const list = products.slice(startIndex, endIndex);
+    let items = products.slice();
+
+    if (categories === "women") {
+      items = products.filter((i) => i.category === "women");
+      setTotalPages(Math.ceil(items.length / productsPerPage));
+    } else if (categories === "men") {
+      items = products.filter((i) => i.category === "men");
+      setTotalPages(Math.ceil(items.length / productsPerPage));
+    }
+
+    const list = items.slice(startIndex, endIndex);
     if (sortType === "By Name") {
       list.sort((a, b) => a.name.localeCompare(b.name));
     } else if (sortType === "High To Low") {
@@ -31,7 +42,7 @@ function Catalog() {
       list.sort((a, b) => Number(a.price) - Number(b.price));
     }
     setItemToShow(list);
-  }, [startIndex, selectedPage, sortType, productsPerPage]);
+  }, [startIndex, selectedPage, sortType, productsPerPage, categories]);
 
   let pages = [];
   for (let a = 1; a <= totalPages; a++) {
@@ -73,14 +84,41 @@ function Catalog() {
 
                 <ul>
                   <li>
-                    <a href="#">
-                      Women <span>(25)</span>
-                    </a>
+                    <p
+                      onClick={(e) =>
+                        setCategories(e.target.firstChild.data.toLowerCase())
+                      }
+                      className="categories-type"
+                    >
+                      All <span>({products.length})</span>
+                    </p>
                   </li>
                   <li>
-                    <a href="#">
-                      Men <span>(235)</span>
-                    </a>
+                    <p
+                      onClick={(e) =>
+                        setCategories(e.target.firstChild.data.toLowerCase())
+                      }
+                      className="categories-type"
+                    >
+                      Women{" "}
+                      <span>
+                        ({products.filter((i) => i.category === "women").length}
+                        )
+                      </span>
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      onClick={(e) =>
+                        setCategories(e.target.firstChild.data.toLowerCase())
+                      }
+                      className="categories-type"
+                    >
+                      Men{" "}
+                      <span>
+                        ({products.filter((i) => i.category === "men").length})
+                      </span>
+                    </p>
                   </li>
                 </ul>
               </div>

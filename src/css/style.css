@@ -2861,7 +2861,7 @@ a.load-more:hover {
   border-bottom: 1px solid #ebebeb;
 }
 
-.shop-categories li a {
+.shop-categories li .categories-type {
   color: #6b6b6b;
   font-size: 13px;
   font-family: "Merriweather";
@@ -2869,6 +2869,7 @@ a.load-more:hover {
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .shop-categories li a span {
