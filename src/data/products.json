@@ -252,7 +252,7 @@
         "newItem": false
     },
     {
-        "id": 121,
+        "id": 19,
         "name": "Sweeter",
         "sizes": ["S", "M", "L"],
         "color": ["black", "grey", "blue", "red"],
@@ -266,7 +266,7 @@
         "newItem": false
     },
     {
-        "id": 21,
+        "id": 20,
         "name": "Coat",
         "sizes": ["S", "L", "XL"],
         "color": ["blue", "black", "gray"],
@@ -280,7 +280,7 @@
         "newItem": false
     },
     {
-        "id": 31,
+        "id": 21,
         "name": "Blazer",
         "sizes": ["XS", "X", "M"],
         "color": ["white", "black", "red"],
@@ -294,7 +294,7 @@
         "newItem": false
     },
     {
-        "id": 41,
+        "id": 22,
         "name": "Jacket",
         "sizes": ["S", "M", "L"],
         "color": ["red", "gray"],
@@ -308,7 +308,7 @@
         "newItem": false
     },
     {
-        "id": 51,
+        "id": 23,
         "name": "Jacket",
         "sizes": ["S", "M", "L"],
         "color": ["black"],
@@ -322,7 +322,7 @@
         "newItem": false
     },
     {
-        "id": 61,
+        "id": 24,
         "name": "Suit",
         "sizes": ["M", "L"],
         "color": ["black"],
@@ -336,7 +336,7 @@
         "newItem": false
     },
     {
-        "id": 71,
+        "id": 25,
         "name": "Dress",
         "sizes": ["S", "M", "L"],
         "color": ["black", "gray", "red"],
@@ -350,7 +350,7 @@
         "newItem": false
     },
     {
-        "id": 81,
+        "id": 26,
         "name": "Shirt",
         "sizes": ["S", "M", "L"],
         "color": ["blue", "red", "white"],
@@ -364,7 +364,7 @@
         "newItem": false
     },
     {
-        "id": 92,
+        "id": 27,
         "name": "Dress",
         "sizes": ["S", "M", "L", "XL"],
         "color": ["grey", "blue"],
@@ -378,7 +378,7 @@
         "newItem": false
     },
     {
-        "id": 101,
+        "id": 28,
         "name": "Sweeter",
         "sizes": ["S", "M", "L"],
         "color": ["black", "grey", "blue", "red"],
@@ -392,7 +392,7 @@
         "newItem": false
     },
     {
-        "id": 111,
+        "id": 29,
         "name": "Coat",
         "sizes": ["S", "L", "XL"],
         "color": ["blue", "black", "gray"],
@@ -406,7 +406,7 @@
         "newItem": false
     },
     {
-        "id": 121,
+        "id": 30,
         "name": "Blazer",
         "sizes": ["XS", "X", "M"],
         "color": ["white", "black", "red"],
@@ -420,7 +420,7 @@
         "newItem": false
     },
     {
-        "id": 131,
+        "id": 31,
         "name": "Jacket",
         "sizes": ["S", "M", "L"],
         "color": ["red", "gray"],
@@ -434,7 +434,7 @@
         "newItem": false
     },
     {
-        "id": 141,
+        "id": 32,
         "name": "Jacket",
         "sizes": ["S", "M", "L"],
         "color": ["black"],
@@ -448,7 +448,7 @@
         "newItem": false
     },
     {
-        "id": 151,
+        "id": 33,
         "name": "Suit",
         "sizes": ["M", "L"],
         "color": ["black"],
@@ -462,7 +462,7 @@
         "newItem": false
     },
     {
-        "id": 161,
+        "id": 34,
         "name": "Dress",
         "sizes": ["S", "M", "L"],
         "color": ["black", "gray", "red"],
@@ -476,7 +476,7 @@
         "newItem": false
     },
     {
-        "id": 171,
+        "id": 35,
         "name": "Shirt",
         "sizes": ["S", "M", "L"],
         "color": ["blue", "red", "white"],
@@ -490,7 +490,7 @@
         "newItem": false
     },
     {
-        "id": 181,
+        "id": 36,
         "name": "Dress",
         "sizes": ["S", "M", "L", "XL"],
         "color": ["grey", "blue"],

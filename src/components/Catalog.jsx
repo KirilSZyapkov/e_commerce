@@ -18,7 +18,7 @@ function Catalog() {
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   useEffect(() => {
-    console.log(sortType === "High To Low");
+    console.log(products);
     const endIndex = productsPerPage * selectedPage;
     const list = products.slice(startIndex, endIndex);
     if (sortType === "By Name") {
@@ -31,7 +31,7 @@ function Catalog() {
       list.sort((a, b) => Number(a.price) - Number(b.price));
     }
     setItemToShow(list);
-  }, [startIndex, selectedPage, sortType]);
+  }, [startIndex, selectedPage, sortType, productsPerPage]);
 
   let pages = [];
   for (let a = 1; a <= totalPages; a++) {
