@@ -149,8 +149,6 @@
   border-bottom: 0 !important;
 }
 
-
-
 a {
   text-decoration: none !important;
   transition: all 0.1s ease-in-out;
@@ -174,10 +172,9 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background: #fff;
   overflow: hidden;
-
 }
 
 .bannerpromo {
@@ -224,7 +221,7 @@ body img {
 h1 {
   color: #000;
   font-size: 28px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -233,7 +230,7 @@ h1 {
 h2 {
   color: #000;
   font-size: 24px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -242,7 +239,7 @@ h2 {
 h3 {
   color: #000;
   font-size: 20px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -251,7 +248,7 @@ h3 {
 h4 {
   color: #000;
   font-size: 18px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -260,7 +257,7 @@ h4 {
 h5 {
   color: #000;
   font-size: 16px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -269,7 +266,7 @@ h5 {
 h6 {
   color: #000;
   font-size: 15px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -280,10 +277,8 @@ p {
   color: #6b6b6b;
   margin: 0;
   line-height: 22px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
-
-
 
 /*-------------------------------------------------------*/
 /* Isotope filtering
@@ -334,7 +329,6 @@ p {
   float: right;
 }
 
-
 .lang {
   float: left;
   margin-right: 20px;
@@ -343,14 +337,14 @@ p {
 
 .lang li span {
   font-size: 12px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #a1a1a1;
 }
 
 .lang li a {
   color: #fff;
   font-size: 12px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-transform: uppercase;
 }
 
@@ -358,7 +352,6 @@ p {
   color: #fff;
   text-transform: uppercase;
 }
-
 
 .lang .drop-down2 {
   display: none;
@@ -374,7 +367,6 @@ p {
   display: block;
 }
 
-
 .curr {
   float: left;
   margin-right: 20px;
@@ -383,14 +375,14 @@ p {
 
 .curr li span {
   font-size: 12px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #a1a1a1;
 }
 
 .curr li a {
   color: #fff;
   font-size: 12px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-transform: uppercase;
 }
 
@@ -398,7 +390,6 @@ p {
   color: #fff;
   text-transform: uppercase;
 }
-
 
 .curr .drop-down2 {
   display: none;
@@ -421,7 +412,7 @@ p {
 .right-line a {
   color: #fff;
   font-size: 12px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 .right-line a:after {
@@ -440,12 +431,9 @@ p {
   padding-right: 0;
 }
 
-
 /*-------------------------------------------------*/
 /* =  Login
 /*-------------------------------------------------*/
-
-
 
 #mask {
   display: none;
@@ -477,7 +465,8 @@ p {
   /* Safari, Chrome */
 }
 
-img.btn_close {}
+img.btn_close {
+}
 
 #login-box .close {
   float: none !important;
@@ -526,7 +515,7 @@ form.signin .textbox input {
   background-color: #f7f7f7;
   border: solid 1px #e4e4e4;
   margin-bottom: 20px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
 }
 
@@ -543,11 +532,10 @@ form.signin .textbox input {
 .signed {
   color: #6b6b6b !important;
   font-size: 13px !important;
-  font-family: 'Merriweather' !important;
+  font-family: "Merriweather" !important;
   display: inline !important;
   margin-left: 7px;
   margin-right: 50%;
-
 }
 
 form.signin input:-moz-placeholder {
@@ -564,7 +552,7 @@ form.signin input::-webkit-input-placeholder {
   line-height: 29px !important;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -573,7 +561,6 @@ form.signin input::-webkit-input-placeholder {
   display: block;
   border: 0;
 }
-
 
 .login-title {
   font-size: 20px;
@@ -589,14 +576,14 @@ form.signin input::-webkit-input-placeholder {
 
 .forgot2 {
   float: right !important;
-  font-family: 'Merriweather' !important;
+  font-family: "Merriweather" !important;
   font-size: 13px !important;
   font-style: italic !important;
   color: #6b6b6b !important;
 }
 
 .recover {
-  font-family: 'Merriweather' !important;
+  font-family: "Merriweather" !important;
   font-size: 13px !important;
   font-style: italic !important;
   color: #ea5748 !important;
@@ -662,7 +649,7 @@ form.signin input::-webkit-input-placeholder {
 .search-input input[type="text"] {
   border: 1px solid #e4e4e4;
   padding: 10px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-style: italic;
   color: #424242;
   font-size: 12px;
@@ -687,7 +674,7 @@ form.signin input::-webkit-input-placeholder {
 }
 
 .cartmain {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #555555;
   font-weight: 700;
   font-size: 16px;
@@ -709,7 +696,7 @@ form.signin input::-webkit-input-placeholder {
 
 .shop-items {
   color: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 10px;
   border-radius: 50%;
   background: #ea5748;
@@ -751,8 +738,6 @@ form.signin input::-webkit-input-placeholder {
   display: none;
 }
 
-
-
 .hover-box img {
   float: left;
 }
@@ -782,12 +767,12 @@ form.signin input::-webkit-input-placeholder {
 .hover-cart p {
   font-size: 13px;
   color: #000;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   margin-bottom: 5px;
 }
 
 .hover-cart span {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #000;
   font-size: 15px;
   margin-bottom: 5px;
@@ -795,7 +780,7 @@ form.signin input::-webkit-input-placeholder {
 }
 
 .subtotal {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 14px;
   font-weight: bold;
   color: #000;
@@ -806,7 +791,7 @@ form.signin input::-webkit-input-placeholder {
 .subtotal span {
   font-size: 16px;
   display: inline;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
 }
 
 .viewcard {
@@ -815,7 +800,7 @@ form.signin input::-webkit-input-placeholder {
   line-height: 39px;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -830,15 +815,13 @@ form.signin input::-webkit-input-placeholder {
   line-height: 39px;
   background-color: #000;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
   display: inline-block;
 }
-
-
 
 /*-------------------------------------------------*/
 /* =  Navigation
@@ -857,7 +840,7 @@ form.signin input::-webkit-input-placeholder {
   position: relative;
 }
 
-#nav>select {
+#nav > select {
   display: none;
 }
 
@@ -873,7 +856,7 @@ ul#navlist li {
   position: relative;
 }
 
-ul#navlist>li {
+ul#navlist > li {
   margin: 0 0px;
 }
 
@@ -893,7 +876,7 @@ ul#navlist li a {
   -webkit-transition: all 0.17s ease-in-out;
   -o-transition: all 0.17s ease-in-out;
   color: #555555;
-  font-family: 'Noticia Text', serif;
+  font-family: "Noticia Text", serif;
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
@@ -901,18 +884,17 @@ ul#navlist li a {
   outline: 0;
 }
 
-
-ul#navlist>li.active a,
+ul#navlist > li.active a,
 ul#navlist li a:hover {
   color: #ea5748;
 }
 
-ul#navlist>li:last-child a {}
-
+ul#navlist > li:last-child a {
+}
 
 /* DropDown Menu = Superfish */
 .sf-menu {
-  line-height: 1.0;
+  line-height: 1;
   overflow: visible !important;
 }
 
@@ -1021,7 +1003,6 @@ ul#navlist>li:last-child a {}
   display: none;
 }
 
-
 .sf-menu .sub-menu a {
   display: inline-block;
   text-decoration: none;
@@ -1032,7 +1013,7 @@ ul#navlist>li:last-child a {}
   display: block;
   color: #555555 !important;
   font-size: 12px !important;
-  font-family: 'Ubuntu', serif !important;
+  font-family: "Ubuntu", serif !important;
   padding: 12px 12px !important;
   font-weight: 300;
   background: #fff !important;
@@ -1046,7 +1027,6 @@ ul#navlist>li:last-child a {}
   color: #ea5748 !important;
   border: 0 !important;
 }
-
 
 .sub-menu span {
   display: none;
@@ -1062,20 +1042,19 @@ ul#navlist>li:last-child a {}
   padding-top: 30px;
 }
 
-
 .short-tabs {
   padding: 60px 0;
 }
 
 .title {
   position: relative;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .title h1 {
   color: #000;
   font-size: 28px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   display: table;
@@ -1095,7 +1074,6 @@ ul#navlist>li:last-child a {}
 .title-border {
   border-top: 1px solid #929292;
   margin-top: -34px;
-
 }
 
 /*Home 1*/
@@ -1103,7 +1081,6 @@ ul#navlist>li:last-child a {}
 .collection img {
   width: 100%;
 }
-
 
 .coll-box {
   position: relative;
@@ -1121,7 +1098,7 @@ ul#navlist>li:last-child a {}
   color: #fff;
   font-size: 16px;
   font-style: italic;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   display: block;
   text-align: center;
   margin-bottom: 20px;
@@ -1130,7 +1107,7 @@ ul#navlist>li:last-child a {}
 .coll-text p {
   color: #fff;
   font-size: 30px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
@@ -1139,7 +1116,7 @@ ul#navlist>li:last-child a {}
 }
 
 .coll-text a {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
@@ -1173,7 +1150,7 @@ ul#navlist>li:last-child a {}
 
 .holder {
   position: relative;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .holder-border {
@@ -1196,7 +1173,7 @@ ul#navlist>li:last-child a {}
 .filter p {
   color: #919191;
   font-size: 20px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   display: block;
@@ -1208,7 +1185,6 @@ ul#navlist>li:last-child a {}
   font-size: 13px;
   vertical-align: 3px;
 }
-
 
 .filter p.active {
   color: #000;
@@ -1238,7 +1214,7 @@ ul#navlist>li:last-child a {}
   text-align: center;
   opacity: 0;
   filter: alpha(opacity=0);
-  background: rgba(0, 0, 0, .4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .demo1 li:hover .arrival-mask {
@@ -1249,10 +1225,8 @@ ul#navlist>li:last-child a {}
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-i
+  -o-transition: all 0.3s ease-i;
 }
-
-
 
 .buttons-group {
   margin: 35% auto 20px;
@@ -1261,7 +1235,7 @@ ul#navlist>li:last-child a {}
 .wishlist {
   text-align: center;
   color: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   display: block;
   margin-bottom: 10px;
@@ -1275,10 +1249,9 @@ ul#navlist>li:last-child a {}
 .compare {
   text-align: center;
   color: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   display: block;
-  ;
 }
 
 .compare:hover {
@@ -1298,7 +1271,7 @@ ul#navlist>li:last-child a {}
   font-size: 14px;
   margin: 0 0 8px;
   color: #000;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   text-align: center;
 }
 
@@ -1321,19 +1294,18 @@ ul#navlist>li:last-child a {}
   display: block;
   margin: 0 0 5px;
   color: #7f7f7f;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-align: center;
   text-decoration: line-through;
 }
-
 
 .arr-content .low-price {
   font-size: 16px;
   display: block;
   margin: 0 0 5px;
   color: #ea5748;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-align: center;
 }
@@ -1382,7 +1354,7 @@ ul#navlist>li:last-child a {}
 }
 
 .middle-content h1 {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 35px;
   font-weight: bold;
   font-style: italic;
@@ -1395,9 +1367,8 @@ ul#navlist>li:last-child a {}
   color: #000;
 }
 
-
 .middle-shipp p {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 15px;
   color: #000;
   margin: 8px auto 0;
@@ -1439,7 +1410,7 @@ ul#navlist>li:last-child a {}
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 0 0;
   text-align: center;
 }
@@ -1453,14 +1424,14 @@ ul#navlist>li:last-child a {}
   font-size: 12px;
   text-align: center;
   font-weight: bold;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 0 0px;
   text-transform: uppercase;
 }
 
 .blog-img h3 {
   font-size: 16px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #323232;
   text-transform: uppercase;
   text-align: center;
@@ -1512,7 +1483,6 @@ ul#navlist>li:last-child a {}
   width: 22.833%;
   margin-bottom: 0px;
 }
-
 
 /*Transparent Home*/
 
@@ -1580,11 +1550,9 @@ ul#navlist li a:hover {
   color: #fff;
 }
 
-
-
 .cart input[type="text"] {
   font-size: 12px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   color: #b2b2b2;
   border: 1px solid #fff !important;
@@ -1592,7 +1560,6 @@ ul#navlist li a:hover {
   padding: 8px;
   background: rgba(255, 255, 255, 1);
 }
-
 
 .cart input[type="submit"] {
   /* background: url(./css/images/search.png) 0 no-repeat; */
@@ -1613,9 +1580,11 @@ ul#navlist li a:hover {
   top: -3px;
 }
 
-.search-bar.active {}
+.search-bar.active {
+}
 
-.trigger {}
+.trigger {
+}
 
 .services {
   padding: 60px 0;
@@ -1631,7 +1600,7 @@ ul#navlist li a:hover {
 .serv-box h4 {
   text-transform: uppercase;
   color: #000;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 20px 0;
 }
 
@@ -1662,7 +1631,6 @@ ul#navlist li a:hover {
   display: block;
 }
 
-
 .arr-content ul {
   display: table;
   margin: 0 auto 5px;
@@ -1682,8 +1650,6 @@ ul#navlist li a:hover {
   position: relative;
 }
 
-
-
 .list_carousel1 li:hover .arrival-mask {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -1692,7 +1658,7 @@ ul#navlist li a:hover {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-i
+  -o-transition: all 0.3s ease-i;
 }
 
 .list_carousel1 li:hover .arr-content {
@@ -1705,7 +1671,7 @@ ul#navlist li a:hover {
 }
 
 .feat-items h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1714,7 +1680,6 @@ ul#navlist li a:hover {
   padding-bottom: 20px;
   margin: 0 0 20px;
 }
-
 
 .prev1 {
   font-size: 26px;
@@ -1736,14 +1701,13 @@ ul#navlist li a:hover {
   top: -65px;
 }
 
-
 .middle-content2 {
   padding: 50px 0;
   /* background: url(../upload/middle-bg.jpg) no-repeat; */
 }
 
 .middle-content2 h1 {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 35px;
   font-weight: bold;
   font-style: italic;
@@ -1752,10 +1716,8 @@ ul#navlist li a:hover {
   margin: 0;
 }
 
-
-
 .middle-shipp2 p {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 15px;
   color: #fff;
   margin: 8px auto 0;
@@ -1767,7 +1729,7 @@ ul#navlist li a:hover {
 }
 
 .middle-content2 a {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
@@ -1798,7 +1760,7 @@ ul#navlist li a:hover {
 }
 
 .feat-items2 h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1807,7 +1769,6 @@ ul#navlist li a:hover {
   padding-bottom: 20px;
   margin: 0 0 20px;
 }
-
 
 .list_carousel2 li {
   text-align: center;
@@ -1823,8 +1784,6 @@ ul#navlist li a:hover {
   position: relative;
 }
 
-
-
 .list_carousel2 li:hover .arrival-mask {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -1833,7 +1792,7 @@ ul#navlist li a:hover {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-i
+  -o-transition: all 0.3s ease-i;
 }
 
 .list_carousel2 li:hover .arr-content {
@@ -1844,8 +1803,6 @@ ul#navlist li a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-
-
 
 .prev2 {
   font-size: 26px;
@@ -1866,7 +1823,6 @@ ul#navlist li a:hover {
   right: 4px;
   top: -65px;
 }
-
 
 /*Testimonials*/
 
@@ -1901,7 +1857,7 @@ ul#navlist li a:hover {
 }
 
 .testimonials .user {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 14px;
   color: #fff;
   display: block;
@@ -1935,14 +1891,12 @@ ul#navlist li a:hover {
   padding: 55px 0;
 }
 
-
-
 .fprod-item li {
   margin-bottom: 70px;
 }
 
 .fprod-item h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1958,7 +1912,7 @@ ul#navlist li a:hover {
 }
 
 .fproditem-text h3 {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 12px;
   color: #000;
   margin: 0 0 7px;
@@ -1969,7 +1923,7 @@ ul#navlist li a:hover {
   display: block;
   margin: 0 0 7px;
   color: #ea5748;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
 }
 
@@ -2012,7 +1966,7 @@ a.logo {
 .vertical-search input[type="text"] {
   border: 1px solid #e4e4e4;
   padding: 10px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-style: italic;
   color: #424242;
   font-size: 12px;
@@ -2030,11 +1984,10 @@ a.logo {
   border: 0;
 }
 
-
 p.slogan {
   color: #fff;
   font-size: 24px;
-  font-family: 'Courier New', sans-serif;
+  font-family: "Courier New", sans-serif;
   font-weight: 300;
   font-style: italic;
   margin: 0;
@@ -2052,7 +2005,7 @@ a.elemadded {
   display: none;
   color: #fff;
   font-size: 28px;
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
   text-transform: uppercase;
   padding: 10px;
   background: #ea5748;
@@ -2064,19 +2017,20 @@ a.elemadded {
   -o-transition: all 0.17s ease-in-out;
 }
 
-a.elemadded:hover {}
+a.elemadded:hover {
+}
 
-ul.menu>li {
+ul.menu > li {
   list-style: none;
   position: relative;
 }
 
-ul.menu>li>a,
+ul.menu > li > a,
 ul.drop-down li a {
   display: block;
   text-decoration: none;
   color: #555555;
-  font-family: 'Noticia Text', serif;
+  font-family: "Noticia Text", serif;
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
@@ -2091,13 +2045,14 @@ ul.drop-down li a {
   -o-transition: all 0.17s ease-in-out;
 }
 
-ul.menu li:first-child a {}
+ul.menu li:first-child a {
+}
 
-ul.menu>li>a.active {
+ul.menu > li > a.active {
   color: #ea5748;
 }
 
-ul.menu>li>a:hover {
+ul.menu > li > a:hover {
   color: #ea5748;
 }
 
@@ -2105,7 +2060,6 @@ ul.menu li a span {
   position: relative;
   z-index: 2;
 }
-
 
 ul.drop-down {
   position: absolute;
@@ -2141,7 +2095,7 @@ ul.drop-down {
   -o-transition: -o-transform 0.4s, opacity 0.1s 0.3s;
 }
 
-li.drop:hover>ul.drop-down {
+li.drop:hover > ul.drop-down {
   visibility: visible;
   opacity: 1;
   -webkit-transform: rotateY(0deg);
@@ -2186,7 +2140,7 @@ ul.drop-down li a:hover {
 
 .vertical-cart .shop-items {
   color: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 10px;
   border-radius: 50%;
   background: #ea5748;
@@ -2200,7 +2154,7 @@ ul.drop-down li a:hover {
 }
 
 .vertical-cart .cart a {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #555555;
   font-weight: 700;
   font-size: 16px;
@@ -2214,7 +2168,7 @@ ul.drop-down li a:hover {
 }
 
 .login a {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 14px;
   color: #a1a1a1;
 }
@@ -2261,7 +2215,6 @@ ul.social-icons li a:hover {
   color: #fff;
 }
 
-
 ul.social-icons li a i {
   color: #969696;
   font-size: 15px;
@@ -2276,18 +2229,14 @@ ul.social-icons li a:hover i {
   color: #fff;
 }
 
-
-
 ul.social-icons li a.github i {
   color: #000;
 }
-
 
 .vertical-copyright {
   text-align: center;
   padding-bottom: 30px;
 }
-
 
 #vertical-content {
   position: relative;
@@ -2322,7 +2271,7 @@ ul.social-icons li a.github i {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, 0.8);
   text-align: center;
 
   transition: all 0.3s ease-in-out;
@@ -2336,7 +2285,7 @@ ul.social-icons li a.github i {
 }
 
 .leftmenu-mask h3 {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 32px;
   color: #000;
   margin: 30% auto 30px;
@@ -2347,7 +2296,7 @@ ul.social-icons li a.github i {
   display: block;
   margin: 0 0 55px;
   color: #ea5748;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-align: center;
 }
@@ -2384,11 +2333,10 @@ a.load-more {
   text-align: center;
   display: block;
   font-size: 16px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #fff;
   text-transform: uppercase;
   background-color: #ea5748;
-
 }
 
 a.load-more:hover {
@@ -2434,7 +2382,7 @@ a.load-more:hover {
   height: 39px;
   line-height: 39px;
   background-color: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 12px;
   font-style: italic;
   color: #b2b2b2;
@@ -2446,7 +2394,7 @@ a.load-more:hover {
   color: #fff;
   font-size: 16px;
   font-style: italic;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   display: block;
   text-align: center;
   margin-bottom: 25px;
@@ -2456,7 +2404,7 @@ a.load-more:hover {
 .discount p {
   color: #fff;
   font-size: 30px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
@@ -2465,7 +2413,7 @@ a.load-more:hover {
 }
 
 .discount a {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   text-transform: uppercase;
   font-size: 11px;
   width: 130px;
@@ -2473,7 +2421,7 @@ a.load-more:hover {
   text-align: center;
   display: block;
   font-size: 13px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #fff;
   text-transform: uppercase;
   background: transparent;
@@ -2495,7 +2443,7 @@ a.load-more:hover {
 }
 
 .bannerfull-item h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 50px;
   font-weight: bold;
   color: #fff;
@@ -2523,7 +2471,7 @@ a.load-more:hover {
 .banerfull-content .slider-button2 {
   width: 151px;
   padding: 15px 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 16px;
   text-transform: uppercase;
   background: #ea5748;
@@ -2540,7 +2488,7 @@ a.load-more:hover {
 }
 
 .black-color h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 50px;
   font-weight: bold;
   color: #000;
@@ -2559,7 +2507,6 @@ a.load-more:hover {
   border: solid 1px #000;
   color: #000;
 }
-
 
 .black-color .banerfull-content {
   position: absolute;
@@ -2593,7 +2540,7 @@ a.load-more:hover {
 .call-to-action h1 {
   text-align: center;
   font-size: 32px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 0 0 20px;
   text-transform: uppercase;
 }
@@ -2631,8 +2578,6 @@ a.load-more:hover {
   margin-left: 0;
 }
 
-
-
 .footer2 form {
   position: relative;
   width: 270px;
@@ -2642,7 +2587,7 @@ a.load-more:hover {
 
 .footer2 input[type="text"] {
   font-size: 12px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   color: #b2b2b2;
   border: 1px solid #2a2a2a;
@@ -2651,7 +2596,6 @@ a.load-more:hover {
   background: transparent;
   outline: 0;
 }
-
 
 .footer2 input[type="submit"] {
   /* background: url(../upload/arrow.png) 0 no-repeat; */
@@ -2700,7 +2644,7 @@ a.load-more:hover {
 
 .banner-footer h1 {
   font-size: 18px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   text-transform: uppercase;
   border-bottom: 1px solid #d4d4d4;
   padding-bottom: 18px;
@@ -2716,7 +2660,6 @@ a.load-more:hover {
   bottom: -10px;
   outline: 0 !important;
 }
-
 
 #back-to-top2 a {
   display: block;
@@ -2734,7 +2677,7 @@ a.load-more:hover {
 
 .banner-footer .f-about input[type="text"] {
   font-size: 12px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   color: #b2b2b2;
   border: 1px solid #d4d4d4;
@@ -2758,7 +2701,6 @@ a.load-more:hover {
   color: #000;
 }
 
-
 .banner-footer .account a:hover {
   color: #000;
 }
@@ -2771,7 +2713,7 @@ a.load-more:hover {
 
 #slider-range,
 #slider-range {
-  margin-bottom: 1em
+  margin-bottom: 1em;
 }
 
 #slider-range_amount,
@@ -2795,7 +2737,7 @@ a.load-more:hover {
 .ui-slider,
 .ui-slider {
   position: relative;
-  text-align: left
+  text-align: left;
 }
 
 .ui-slider .ui-slider-handle,
@@ -2838,17 +2780,17 @@ a.load-more:hover {
 .ui-slider-horizontal .ui-slider-range,
 .ui-slider-horizontal .ui-slider-range {
   top: 0;
-  height: 100%
+  height: 100%;
 }
 
 .ui-slider-horizontal .ui-slider-range-min,
 .ui-slider-horizontal .ui-slider-range-min {
-  left: -1px
+  left: -1px;
 }
 
 .ui-slider-horizontal .ui-slider-range-max,
 .ui-slider-horizontal .ui-slider-range-max {
-  right: -1px
+  right: -1px;
 }
 
 .shop-price {
@@ -2874,7 +2816,7 @@ a.load-more:hover {
 
 .asidetitle {
   color: #3c414c;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 100;
   font-size: 20px;
   border-bottom: 1px solid #eef0f2;
@@ -2909,7 +2851,7 @@ a.load-more:hover {
 }
 
 .asidetitle {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -2922,7 +2864,7 @@ a.load-more:hover {
 .shop-categories li a {
   color: #6b6b6b;
   font-size: 13px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   display: block;
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 10px;
@@ -2937,11 +2879,10 @@ a.load-more:hover {
   color: #000;
 }
 
-
 .brands li {
   color: #6b6b6b;
   font-size: 13px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   display: block;
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 10px;
@@ -2970,7 +2911,7 @@ a.load-more:hover {
 .tags a {
   color: #9b9b9b;
   font-size: 12px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   float: left;
   display: table;
@@ -2983,8 +2924,6 @@ a.load-more:hover {
   background: #ea5748;
   color: #fff;
 }
-
-
 
 /* ShopMain*/
 .toolbar {
@@ -3023,7 +2962,7 @@ a.load-more:hover {
   font-size: 15px;
   line-height: 23px;
   margin-right: 10px;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-weight: 300;
 }
 
@@ -3067,7 +3006,7 @@ a.load-more:hover {
 }
 
 .lg-panel span {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
   padding: 10px;
@@ -3087,7 +3026,6 @@ a.load-more:hover {
   margin: 15px 0;
   color: #000;
 }
-
 
 .shop-grid .overlay {
   position: relative;
@@ -3120,7 +3058,6 @@ a.load-more:hover {
   width: 100%;
 }
 
-
 .grid-item :hover .arrival-mask {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -3129,7 +3066,7 @@ a.load-more:hover {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-i
+  -o-transition: all 0.3s ease-i;
 }
 
 .shop-pag {
@@ -3159,15 +3096,11 @@ a.load-more:hover {
   font-size: 13px;
   line-height: 23px;
   margin-right: 10px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 
-
-
 .pagenation {
-
   float: right;
-
 }
 
 .blog-pagenation {
@@ -3184,16 +3117,13 @@ a.load-more:hover {
   float: left;
   margin-left: 4px;
   border: 1px solid #e4e4e4;
-
 }
-
-
 
 .pagenation li:first-child {
   margin-left: 0;
 }
 
-.pagenation li a {
+.pagenation li .pagenation-item {
   display: block;
   color: #6b6b6b;
   font-size: 14px;
@@ -3201,7 +3131,8 @@ a.load-more:hover {
   height: 35px;
   line-height: 35px;
   text-align: center;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
+  cursor: pointer;
 }
 
 .blog-pagenation li a {
@@ -3212,14 +3143,14 @@ a.load-more:hover {
   border: 0;
 }
 
-.pagenation li.active a,
-.pagenation li:hover a {
+.pagenation li.active .pagenation-item,
+.pagenation li:hover .pagenation-item {
   color: #ea5748;
 }
 
 .pagenation li:not(.active):hover {
-  opacity: 0.90;
-  -moz-opacity: 0.90;
+  opacity: 0.9;
+  -moz-opacity: 0.9;
   filter: alpha(opacity=90);
 }
 
@@ -3229,7 +3160,7 @@ a.load-more:hover {
 }
 
 .list-content h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -3253,7 +3184,7 @@ a.load-more:hover {
 }
 
 .list-midrow .high-price {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 20px;
   font-weight: bold;
   text-decoration: line-through;
@@ -3261,7 +3192,7 @@ a.load-more:hover {
 }
 
 .list-midrow .low-price {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 20px;
   font-weight: bold;
   color: #ea5748;
@@ -3280,7 +3211,7 @@ a.load-more:hover {
 }
 
 .reviews a {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #6b6b6b;
 }
@@ -3304,7 +3235,7 @@ a.load-more:hover {
 }
 
 .list-downrow li a {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 14px;
   font-style: italic;
   color: #6b6b6b;
@@ -3350,13 +3281,13 @@ a.load-more:hover {
 
 .sp-thumbs a:link,
 .sp-thumbs a:visited {
-  opacity: .4;
+  opacity: 0.4;
   display: inline-block;
-  -webkit-transition: all .2s ease-out;
-  -moz-transition: all .2s ease-out;
-  -ms-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .sp-thumbs a:hover {
@@ -3368,7 +3299,6 @@ a.load-more:hover {
   opacity: 1 !important;
   position: relative;
 }
-
 
 /* Unzoomed, big thumbnail */
 .sp-large {
@@ -3385,7 +3315,8 @@ a.load-more:hover {
   cursor: -moz-zoom-in;
 }
 
-.sp-large a {}
+.sp-large a {
+}
 
 /* Panning Zoomed Image */
 .sp-zoom {
@@ -3411,7 +3342,7 @@ a.load-more:hover {
   width: 19px;
   height: 20px;
   padding: 0 0 2px 1px;
-  background: #F0353A;
+  background: #f0353a;
 }
 
 .sp-full-screen a:link,
@@ -3439,7 +3370,7 @@ a.load-more:hover {
   height: 100%;
   width: 100%;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 999;
   display: none;
 }
@@ -3458,7 +3389,7 @@ a.load-more:hover {
 /* Remove margin in mobile view */
 @media screen and (max-width: 400px) {
   .sp-wrap {
-      margin: 0 0 15px 0;
+    margin: 0 0 15px 0;
   }
 }
 
@@ -3478,7 +3409,7 @@ a.load-more:hover {
   display: block;
   font-size: 16px;
   color: #f5f5f5;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -3490,7 +3421,7 @@ a.load-more:hover {
 }
 
 .top-single span {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   font-style: italic;
   color: #9b9b9b;
@@ -3510,7 +3441,7 @@ a.load-more:hover {
 }
 
 .middle-single h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
@@ -3529,7 +3460,6 @@ a.load-more:hover {
 }
 
 .middle-single {
-
   border-bottom: 1px solid #d4d4d4;
   padding-bottom: 20px;
 }
@@ -3540,7 +3470,7 @@ a.load-more:hover {
 }
 
 .single-price .high-price {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 20px;
   font-weight: bold;
   text-decoration: line-through;
@@ -3548,12 +3478,11 @@ a.load-more:hover {
 }
 
 .single-price .low-price {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 20px;
   font-weight: bold;
   color: #ea5748;
 }
-
 
 .single-price {
   border-bottom: 1px solid #d4d4d4;
@@ -3563,7 +3492,7 @@ a.load-more:hover {
 }
 
 .single-infos p {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #6b6b6b;
   margin: 0 0 10px;
@@ -3595,7 +3524,7 @@ a.load-more:hover {
 
 .single-inputs .select {
   background: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
   padding: 12px 15px;
@@ -3616,7 +3545,7 @@ a.load-more:hover {
 
 .prod-end input[type="text"] {
   background: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
   padding: 10px 15px 9px;
@@ -3631,7 +3560,8 @@ a.load-more:hover {
   margin-left: 20px;
 }
 
-.prod-end ul li {}
+.prod-end ul li {
+}
 
 .prod-end a {
   margin-bottom: 3px;
@@ -3642,19 +3572,17 @@ a.load-more:hover {
   border-bottom: 1px solid #d4d4d4;
   padding-bottom: 20px;
   margin-bottom: 20px;
-
 }
 
 .share span {
   display: block;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 16px;
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
 
 .share li {
   display: inline;
@@ -3690,7 +3618,7 @@ a.load-more:hover {
 
 .check-anchor .holder {
   position: relative;
-  margin-bottom: 23px
+  margin-bottom: 23px;
 }
 
 .check-anchor .holder-border {
@@ -3713,7 +3641,7 @@ a.load-more:hover {
 .check-anchor a {
   color: #919191;
   font-size: 20px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   display: block;
@@ -3725,18 +3653,16 @@ a.load-more:hover {
   vertical-align: 3px;
 }
 
-
 /* .check-anchor li.active a {
   color: #000;
 } */
-
 
 .check-details .table {
   margin-bottom: 0 !important;
 }
 
 .check-details tr th {
-  font-family: 'Noticia Text' !important;
+  font-family: "Noticia Text" !important;
   font-size: 12px !important;
   font-weight: bold !important;
   text-transform: uppercase !important;
@@ -3751,29 +3677,28 @@ a.load-more:hover {
 }
 
 .check-body td p {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #000;
   font-weight: bold;
 }
 
 .check-body td span {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #6b6b6b;
   font-weight: normal;
 }
 
-
 .check-body td {
-  font-family: 'Noticia Text' !important;
+  font-family: "Noticia Text" !important;
   font-size: 15px !important;
   color: #000 !important;
 }
 
 .check-body input[type="text"] {
   background: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #000;
   padding: 5px 15px 5px;
@@ -3783,7 +3708,6 @@ a.load-more:hover {
 
   margin: 0 auto;
   margin-top: -4px;
-
 }
 
 .check-body a {
@@ -3806,7 +3730,7 @@ a.load-more:hover {
   border: solid 1px #e4e4e4;
   font-size: 13px;
   color: #424242;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   text-indent: 10px;
 }
 
@@ -3815,7 +3739,7 @@ a.load-more:hover {
   height: 39px;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -3833,7 +3757,7 @@ a.load-more:hover {
   line-height: 39px;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -3853,7 +3777,7 @@ a.load-more:hover {
   line-height: 39px;
   background-color: #000;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -3880,7 +3804,7 @@ a.load-more:hover {
 .orders p {
   padding: 10px 0;
   border-bottom: 1px solid #ebebeb;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #000;
 }
@@ -3891,7 +3815,7 @@ a.load-more:hover {
 }
 
 .quantity {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   font-style: italic;
   color: #9b9b9b;
@@ -3899,7 +3823,7 @@ a.load-more:hover {
 
 .orders span {
   float: right;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 15px;
   font-weight: normal;
   color: #000;
@@ -3922,7 +3846,7 @@ a.load-more:hover {
 
 .shipping .select {
   background: #f7f7f7;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
   padding: 12px 15px;
@@ -3934,7 +3858,7 @@ a.load-more:hover {
 
 .shipping input[type="text"] {
   background: #f7f7f7;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
   padding: 12px 15px;
@@ -3950,7 +3874,7 @@ a.load-more:hover {
   line-height: 39px;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -3962,9 +3886,6 @@ a.load-more:hover {
   background-color: #000;
   color: #fff;
 }
-
-
-
 
 /*Chekout*/
 
@@ -3986,7 +3907,7 @@ a.load-more:hover {
 
 .form-p p {
   display: inline;
-  margin-left: 7px
+  margin-left: 7px;
 }
 
 .fisrt-row p {
@@ -4002,7 +3923,7 @@ a.load-more:hover {
   padding: 10px 0;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -4010,15 +3931,13 @@ a.load-more:hover {
   text-align: center;
 }
 
-
 .red-check:hover {
   background-color: #000;
   color: #fff;
 }
 
-
 .fisrt-row label {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
 }
@@ -4041,14 +3960,13 @@ a.load-more:hover {
   padding: 10px 20px;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
   display: block;
   text-align: center;
 }
-
 
 .red-check2:hover {
   background-color: #000;
@@ -4067,9 +3985,8 @@ a.load-more:hover {
   color: #000;
 }
 
-
 .second-row label {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
 }
@@ -4085,7 +4002,7 @@ a.load-more:hover {
   text-indent: 15px;
   padding: 10px 0;
   margin-bottom: 20px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
 }
 
@@ -4113,7 +4030,7 @@ a.load-more:hover {
   float: right;
   color: #000;
   font-size: 13px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 
 .payment-method {
@@ -4135,13 +4052,12 @@ a.load-more:hover {
   margin-bottom: 20px;
 }
 
-
 .payment-method input[type="submit"] {
   width: 100%;
   padding: 10px 0;
   background-color: #ea5748;
   border: 0;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -4150,12 +4066,10 @@ a.load-more:hover {
   margin-top: 20px;
 }
 
-
 .payment-method input[type="submit"]:hover {
   background-color: #000;
   color: #fff;
 }
-
 
 /*Blogs*/
 
@@ -4165,7 +4079,7 @@ a.load-more:hover {
 }
 
 .blog-content h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -4178,7 +4092,7 @@ a.load-more:hover {
 }
 
 .post-meta a {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   font-style: italic;
   color: #9b9b9b;
@@ -4208,7 +4122,6 @@ a.load-more:hover {
   border: 0;
 }
 
-
 .post-meta.quote {
   padding-left: 40px;
   border-bottom: 1px solid #ebebeb;
@@ -4217,7 +4130,7 @@ a.load-more:hover {
 }
 
 .blog-content blockquote {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 19px;
   font-style: italic;
   color: #6e6e6e;
@@ -4227,7 +4140,7 @@ a.load-more:hover {
 }
 
 .block-user {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 13px;
   font-style: italic;
   color: #000;
@@ -4251,7 +4164,7 @@ a.load-more:hover {
 }
 
 .left-widget span {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   font-style: italic;
   color: #9b9b9b;
@@ -4268,7 +4181,6 @@ a.load-more:hover {
   padding: 20px;
 }
 
-
 aside .blog-search {
   position: relative;
 }
@@ -4278,7 +4190,7 @@ aside .blog-search input[type="text"] {
   text-indent: 15px;
   width: 100%;
   font-size: 14px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   color: #424242;
   background: #fff;
@@ -4296,7 +4208,6 @@ aside .blog-search input[type="submit"] {
   cursor: pointer;
 }
 
-
 /*Blog Single*/
 
 .blog-single {
@@ -4312,11 +4223,10 @@ aside .blog-search input[type="submit"] {
   font-size: 28px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 35px 0 20px;
   text-transform: uppercase;
 }
-
 
 .blog-single p {
   color: #6b6b6b;
@@ -4329,7 +4239,7 @@ aside .blog-search input[type="submit"] {
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 35px 0 20px;
   text-transform: uppercase;
 }
@@ -4349,7 +4259,7 @@ aside .blog-search input[type="submit"] {
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #ea5748;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 19px;
   font-style: italic;
   color: #6e6e6e;
@@ -4360,7 +4270,7 @@ aside .blog-search input[type="submit"] {
   display: block;
   color: #ea5748;
   font-style: normal;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-weight: 300;
   font-size: 13px;
   margin-top: 10px;
@@ -4387,7 +4297,7 @@ aside .blog-search input[type="submit"] {
   font-size: 13px;
   font-weight: normal;
   font-style: italic;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 
 .blog-tags a:hover {
@@ -4396,7 +4306,7 @@ aside .blog-search input[type="submit"] {
 
 .blog-share p {
   display: inline;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: 700;
   font-size: 16px;
   color: #000;
@@ -4440,8 +4350,6 @@ aside .blog-search input[type="submit"] {
   margin-top: 0px;
 }
 
-
-
 .about-author span {
   color: #9b9b9b;
   font-size: 13px;
@@ -4454,11 +4362,10 @@ aside .blog-search input[type="submit"] {
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 0px 0 20px;
   text-transform: none;
 }
-
 
 .related-item img {
   width: 100%;
@@ -4468,12 +4375,12 @@ aside .blog-search input[type="submit"] {
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 0 0 20px;
 }
 
 .related-item h4 {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #6b6b6b;
   margin: 15px 0;
@@ -4488,7 +4395,7 @@ aside .blog-search input[type="submit"] {
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -4505,11 +4412,12 @@ aside .blog-search input[type="submit"] {
   margin-right: 30px;
 }
 
-.comment-text {}
+.comment-text {
+}
 
 .user-spec h5 {
   float: left;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 14px;
   color: #000;
   font-weight: normal;
@@ -4518,17 +4426,16 @@ aside .blog-search input[type="submit"] {
 
 .user-spec span {
   float: left;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #9b9b9b;
   margin-left: 20px;
   font-style: italic;
 }
 
-
 .reply {
   text-transform: uppercase;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 12px;
   color: #ea5748;
   float: right;
@@ -4544,7 +4451,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .comment-text p {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 14px;
   color: #8c9195;
   margin: 0;
@@ -4562,21 +4469,21 @@ aside .blog-search input[type="submit"] {
 
 .comment-text {
   float: left;
-  width: 80%
+  width: 80%;
 }
 
 .leave-comment h1 {
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .leave-comment label {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #424242;
 }
@@ -4604,7 +4511,6 @@ aside .blog-search input[type="submit"] {
   height: 150px;
 }
 
-
 .leave-comment input[type="submit"] {
   border: 0;
 }
@@ -4619,7 +4525,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .nextpages a {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #6b6b6b;
 }
@@ -4643,7 +4549,7 @@ aside .blog-search input[type="submit"] {
 /*Introduction*/
 
 .introduction h1 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -4665,7 +4571,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .intro-content h4 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 16px;
   font-weight: bold;
   color: #454545;
@@ -4673,13 +4579,12 @@ aside .blog-search input[type="submit"] {
   line-height: 24px;
 }
 
-
 .skills-progress {
   margin-bottom: 30px;
 }
 
 .skills-progress p {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -4688,7 +4593,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .skills-progress p span {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -4704,7 +4609,7 @@ aside .blog-search input[type="submit"] {
   margin-bottom: 15px;
 }
 
-.meter>span {
+.meter > span {
   display: block;
   height: 100%;
   position: relative;
@@ -4712,14 +4617,13 @@ aside .blog-search input[type="submit"] {
   background-color: #ea5748;
 }
 
-
 .testimonials2 {
   padding: 50px 0;
   background: #fff;
 }
 
 .testimonials2 h4 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -4735,7 +4639,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .team-box span {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #6b6b6b;
   display: block;
@@ -4768,12 +4672,9 @@ aside .blog-search input[type="submit"] {
   color: #ea5748;
 }
 
-
 .testimonials2 .bx-controls-direction {
   display: none;
 }
-
-
 
 .testimonials2 .title h1 {
   background: #fff;
@@ -4797,9 +4698,8 @@ aside .blog-search input[type="submit"] {
   margin: auto;
 }
 
-
 .testimonials2 .user {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 14px;
   color: #fff;
   display: block;
@@ -4826,7 +4726,6 @@ aside .blog-search input[type="submit"] {
   border: 2px solid transparent !important;
 }
 
-
 .testimonials2 .bx-wrapper .bx-pager,
 .testimonials2 .bx-wrapper .bx-controls-auto {
   position: static;
@@ -4843,7 +4742,6 @@ aside .blog-search input[type="submit"] {
 .testimonials2 .bx-viewport {
   height: auto !important;
 }
-
 
 /*Testimonials*/
 
@@ -4870,7 +4768,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .testimonials3 .user {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 14px;
   color: #6b6b6b;
   display: block;
@@ -4931,7 +4829,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .contact h2 {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 18px;
   font-weight: bold;
   color: #000;
@@ -4947,7 +4845,6 @@ aside .blog-search input[type="submit"] {
   color: #000;
 }
 
-
 .contact input[type="text"] {
   background-color: #fff;
   border: solid 1px #e4e4e4;
@@ -4956,7 +4853,7 @@ aside .blog-search input[type="submit"] {
   padding: 10px 0;
   margin-bottom: 20px;
   font-size: 13px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #000;
 }
 
@@ -4968,7 +4865,7 @@ aside .blog-search input[type="submit"] {
   padding: 10px 0;
   margin-bottom: 20px;
   font-size: 13px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #000;
   height: 140px;
 }
@@ -4984,9 +4881,8 @@ aside .blog-search input[type="submit"] {
 .contact input[type="submit"] {
   border: 0;
   font-size: 13px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   margin: 0;
-
 }
 
 .subtitle {
@@ -5004,9 +4900,8 @@ aside .blog-search input[type="submit"] {
   margin-bottom: 10px;
 }
 
-
-
-.touch ul {}
+.touch ul {
+}
 
 .touch li {
   display: inline;
@@ -5044,7 +4939,6 @@ aside .blog-search input[type="submit"] {
   margin-bottom: 24px;
 }
 
-
 #tabs li a {
   color: #000;
   font-size: 18px;
@@ -5055,7 +4949,7 @@ aside .blog-search input[type="submit"] {
   outline: 0 !important;
   padding: 15px;
   border-bottom: 3px solid transparent;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
 }
 
 #tabs li.ui-tabs-active a {
@@ -5066,7 +4960,6 @@ aside .blog-search input[type="submit"] {
 #tabs li.ui-tabs-active i {
   border-bottom: 3px solid #ea5748;
 }
-
 
 /*Tabs*/
 
@@ -5094,7 +4987,8 @@ aside .blog-search input[type="submit"] {
   border-top: 1px solid #e5e5e5;
 }
 
-.tabs-widget .tab-links li.active {}
+.tabs-widget .tab-links li.active {
+}
 
 .tabs-widget .tab-links li a:hover {
   background: #fff;
@@ -5114,9 +5008,8 @@ aside .blog-search input[type="submit"] {
   border-left: 1px solid #e5e5e5;
 }
 
-
 .tabs-widget .tab-links li a {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: 700;
   color: #000;
   font-size: 16px;
@@ -5139,14 +5032,13 @@ aside .blog-search input[type="submit"] {
   margin-bottom: 5px;
 }
 
-
-.tabs-widget>div {
+.tabs-widget > div {
   clear: both;
   display: none;
   border: 1px solid #e9e8e6;
 }
 
-.tabs-widget>div>ul {
+.tabs-widget > div > ul {
   margin: 0;
 }
 
@@ -5163,8 +5055,7 @@ aside .blog-search input[type="submit"] {
   display: block;
 }
 
-
-.tabs-widget>div li {
+.tabs-widget > div li {
   overflow: hidden;
   border-top: none;
   background: #fff;
@@ -5173,12 +5064,11 @@ aside .blog-search input[type="submit"] {
   border-bottom: 1px solid #e9e8e6;
 }
 
-.tabs-widget>div li:last-child {
+.tabs-widget > div li:last-child {
   border-bottom: 0;
 }
 
-
-.tabs-widget>div li>a {
+.tabs-widget > div li > a {
   display: block;
 }
 
@@ -5191,8 +5081,6 @@ aside .blog-search input[type="submit"] {
   list-style: none;
 }
 
-
-
 #tabs-titles {
   float: left;
   width: 40%;
@@ -5204,7 +5092,7 @@ aside .blog-search input[type="submit"] {
   border: 1px solid #e5e5e5;
   border-right: 0;
   padding: 20px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: 700;
   color: #000;
   font-size: 16px;
@@ -5235,7 +5123,6 @@ aside .blog-search input[type="submit"] {
   float: left;
   width: 55%;
   border: 1px solid #e5e5e5;
-
 }
 
 .tabs-content p {
@@ -5257,9 +5144,8 @@ aside .blog-search input[type="submit"] {
   /* first one content displayed by default */
 }
 
-
-
-#accordion-container {}
+#accordion-container {
+}
 
 .accordion-header {
   font-size: 16px;
@@ -5267,7 +5153,7 @@ aside .blog-search input[type="submit"] {
   padding: 15px 15px 15px 40px;
   cursor: pointer;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #000;
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
@@ -5278,13 +5164,11 @@ aside .blog-search input[type="submit"] {
   background-repeat: no-repeat;
   color: #ea5748;
   margin-bottom: 0;
-
 }
 
 .inactive-header {
   /* background: url(./css/images/inactive-header.png) 100% center #fff; */
   background-repeat: no-repeat;
-
 }
 
 .accordion-content {
@@ -5301,7 +5185,7 @@ aside .blog-search input[type="submit"] {
   padding: 15px 15px 15px 55px;
   cursor: pointer;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   color: #000;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -5323,7 +5207,6 @@ aside .blog-search input[type="submit"] {
 #accordion div {
   height: auto !important;
   padding: 20px 20px 20px 55px;
-
 }
 
 .buttons {
@@ -5336,7 +5219,7 @@ aside .blog-search input[type="submit"] {
   text-align: center;
   display: block;
   font-size: 16px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #fff;
   text-transform: uppercase;
 }
@@ -5347,7 +5230,7 @@ aside .blog-search input[type="submit"] {
   text-align: center;
   display: block;
   font-size: 13px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
@@ -5360,7 +5243,7 @@ aside .blog-search input[type="submit"] {
   text-align: center;
   display: block;
   font-size: 11px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #fff;
   text-transform: uppercase;
 }
@@ -5450,7 +5333,6 @@ aside .blog-search input[type="submit"] {
   color: #fff;
 }
 
-
 .chart {
   position: relative;
   display: inline-block;
@@ -5474,20 +5356,20 @@ aside .blog-search input[type="submit"] {
   font-weight: 700;
   color: #000;
   font-size: 28px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
 }
 
 .percent:after {
-  content: '%';
+  content: "%";
   margin-left: 0.1em;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .skill-item h1 {
   color: #000;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   text-align: center;
 }
 
@@ -5496,7 +5378,7 @@ aside .blog-search input[type="submit"] {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   padding: 15px !important;
   border-right: 1px solid #3e3e3e !important;
 }
@@ -5506,7 +5388,7 @@ aside .blog-search input[type="submit"] {
   font-size: 13px;
   padding: 15px !important;
   background: #fff;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
 
 .check-body td {
@@ -5521,13 +5403,12 @@ aside .blog-search input[type="submit"] {
   padding-left: 30px !important;
 }
 
-
 .inputs input[type="text"] {
   background-color: #fff;
   border: solid 1px #e4e4e4;
   color: #424242;
   font-size: 14px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-weight: 300;
   width: 100%;
   text-indent: 15px;
@@ -5556,7 +5437,7 @@ aside .blog-search input[type="submit"] {
   border-color: #d2eecb;
   padding: 9px;
   font-weight: normal;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-weight: 300;
   margin-bottom: 30px;
   border-radius: 0;
@@ -5573,7 +5454,7 @@ aside .blog-search input[type="submit"] {
   border-color: #daeff1;
   padding: 9px;
   font-weight: normal;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-weight: 300;
   margin-bottom: 30px;
   border-radius: 0;
@@ -5590,7 +5471,7 @@ aside .blog-search input[type="submit"] {
   border-color: #f5edd7;
   padding: 9px;
   font-weight: normal;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-weight: 300;
   margin-bottom: 30px;
   border-radius: 0;
@@ -5607,7 +5488,7 @@ aside .blog-search input[type="submit"] {
   border-color: #f0bab0;
   padding: 9px;
   font-weight: normal;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-weight: 300;
   margin-bottom: 30px;
   border-radius: 0;
@@ -5629,7 +5510,7 @@ aside .blog-search input[type="submit"] {
 .ready h1 {
   color: #000;
   font-size: 24px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-weight: bold;
   text-transform: uppercase;
   margin: 0 0 10px;
@@ -5638,7 +5519,7 @@ aside .blog-search input[type="submit"] {
 .ready p {
   font-size: 13px;
   color: #6b6b6b;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   margin: 0;
 }
 
@@ -5663,9 +5544,7 @@ aside .blog-search input[type="submit"] {
   width: 100%;
 }
 
-
 /*Typograpgy*/
-
 
 .typography {
   padding: 50px 0;
@@ -5674,8 +5553,6 @@ aside .blog-search input[type="submit"] {
 .headings {
   margin-bottom: 40px;
 }
-
-
 
 .headings .row {
   margin-top: 50px;
@@ -5733,7 +5610,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .bullets li {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 13px;
   color: #6b6b6b;
   margin-bottom: 10px;
@@ -5749,7 +5626,7 @@ aside .blog-search input[type="submit"] {
 
 .naked-drop span {
   font-size: 52px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #000;
   padding-right: 10px;
   padding-bottom: 0px;
@@ -5761,7 +5638,7 @@ aside .blog-search input[type="submit"] {
 
 .full-drop span {
   font-size: 24px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   background: #ea5748;
   color: #fff;
   width: 32px;
@@ -5786,24 +5663,22 @@ aside .blog-search input[type="submit"] {
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #ea5748;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 19px;
   font-style: italic;
   color: #6e6e6e;
   line-height: 31px;
 }
 
-
 .blockquotes blockquote span {
   display: block;
   color: #ea5748;
   font-style: normal;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-weight: 300;
   font-size: 13px;
   margin-top: 10px;
 }
-
 
 .columns {
   margin-bottom: 90px;
@@ -5812,8 +5687,6 @@ aside .blog-search input[type="submit"] {
 .columns .row {
   margin-top: 45px;
 }
-
-
 
 /*404*/
 .page404 {
@@ -5835,7 +5708,7 @@ aside .blog-search input[type="submit"] {
 }
 
 .cart404 p {
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   font-size: 53px;
   text-transform: uppercase;
   color: #444;
@@ -5857,7 +5730,6 @@ aside .blog-search input[type="submit"] {
   color: #ea5748;
 }
 
-
 .page404text form {
   position: relative;
   width: 350px;
@@ -5866,7 +5738,7 @@ aside .blog-search input[type="submit"] {
 .page404text form input[type="text"] {
   border: 1px solid #e4e4e4;
   padding: 10px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-style: italic;
   color: #424242;
   font-size: 12px;
@@ -5892,7 +5764,7 @@ footer {
 
 footer h1 {
   font-size: 18px;
-  font-family: 'Noticia Text';
+  font-family: "Noticia Text";
   text-transform: uppercase;
   border-bottom: 1px solid #2a2a2a;
   padding-bottom: 18px;
@@ -5912,7 +5784,7 @@ footer h1 {
 
 .f-about input[type="text"] {
   font-size: 12px;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   color: #b2b2b2;
   border: 1px solid #2a2a2a;
@@ -5920,7 +5792,6 @@ footer h1 {
   padding: 12px;
   background: transparent;
 }
-
 
 .f-about input[type="submit"] {
   /* background: url(../src/upload/arrow.png) 0 no-repeat; */
@@ -5937,7 +5808,7 @@ footer h1 {
   color: #6b6b6b;
   margin: 0;
   display: block;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   margin-bottom: 17px;
 }
 
@@ -5950,7 +5821,7 @@ footer h1 {
   color: #6b6b6b;
   margin: 0;
   display: block;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   margin-bottom: 17px;
 }
 
@@ -5995,9 +5866,8 @@ footer h1 {
   color: #6b6b6b;
   margin: 0;
   display: block;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
 }
-
 
 .copyright a {
   color: #6b6b6b;
@@ -6012,7 +5882,6 @@ footer h1 {
   padding: 30px 0;
 }
 
-
 #back-to-top {
   position: absolute;
   right: 30px;
@@ -6020,7 +5889,6 @@ footer h1 {
   bottom: -10px;
   outline: 0 !important;
 }
-
 
 #back-to-top a {
   display: block;
@@ -6030,9 +5898,6 @@ footer h1 {
   /* background: url(./css/images/backtop.png) no-repeat center; */
   outline: 0 !important;
 }
-
-
-
 
 /*------------------------------------------------------------- 
                THEME SWITCHER
@@ -6059,18 +5924,18 @@ footer h1 {
 
 .s-close {
   right: -205px !important;
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .s-open {
   right: 0 !important;
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .corner.expanded {
@@ -6083,10 +5948,10 @@ footer h1 {
   background: #fff;
   padding: 0;
   position: relative;
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .heading {
@@ -6115,7 +5980,7 @@ footer h1 {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 100;
 }
 

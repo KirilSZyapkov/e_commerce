@@ -1,24 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CatalogGrid from "./components-items/CatalogGrid";
 import CatalogList from "./components-items/CatalogList";
 
 import products from "../data/products.json";
-import { Link } from "react-router-dom";
 
 function Catalog() {
   const [displayProducts, setDisplayProducts] = useState("grid");
   const [activeDisplay, setActiveDisplay] = useState("grid");
   const [productsPerPage, setProductsPerPage] = useState(12);
+  const [startIndex, setStartIndex] = useState(0);
+  const [itemToShow, setItemToShow] = useState(
+    products.slice(startIndex, productsPerPage)
+  );
+  const [selectedPage, setSelectedPage] = useState(1);
 
   const totalPages = Math.ceil(products.length / productsPerPage);
-  const itemToShow = products.slice(0, productsPerPage);
+
+  useEffect(() => {
+    console.log(selectedPage);
+    const endIndex = productsPerPage * selectedPage;
+    console.log("end " + endIndex);
+
+    const list = products.slice(startIndex, endIndex);
+    console.log(products);
+    setItemToShow(list);
+  }, [startIndex, selectedPage]);
+
+  console.log(itemToShow);
 
   let pages = [];
   for (let a = 1; a <= totalPages; a++) {
     pages.push(a);
   }
-
-  console.log(productsPerPage);
 
   function chageView(e) {
     const target = e.target.parentElement.id;
@@ -31,6 +44,19 @@ function Catalog() {
       setDisplayProducts("list");
     }
   }
+
+  function changePage(e) {
+    const num = Number(e.target.textContent);
+
+    if (num === 1) {
+      setSelectedPage(1);
+      setStartIndex(0);
+    } else {
+      setSelectedPage(num);
+      setStartIndex((num - 1) * productsPerPage);
+    }
+  }
+  console.log(startIndex);
 
   return (
     <div id="content">
@@ -239,8 +265,10 @@ function Catalog() {
                   <div className="pagenation clearfix">
                     <ul>
                       {pages.map((item, i) => (
-                        <li key={i} className="active">
-                          <Link to="#">{item}</Link>
+                        <li key={i} className="pagenation-item">
+                          <p className="pagenation-item" onClick={changePage}>
+                            {item}
+                          </p>
                         </li>
                       ))}
                     </ul>
