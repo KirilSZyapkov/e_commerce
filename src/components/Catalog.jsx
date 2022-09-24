@@ -18,6 +18,7 @@ function Catalog() {
   const [totalPages, setTotalPages] = useState(
     Math.ceil(products.length / productsPerPage)
   );
+  const [pages, setPages] = useState([]);
 
   useEffect(() => {
     const endIndex = productsPerPage * selectedPage;
@@ -35,19 +36,24 @@ function Catalog() {
     if (sortType === "By Name") {
       list.sort((a, b) => a.name.localeCompare(b.name));
     } else if (sortType === "High To Low") {
-      console.log(list);
       list.sort((a, b) => Number(b.price) - Number(a.price));
-      console.log(list);
     } else if (sortType === "Low To High") {
       list.sort((a, b) => Number(a.price) - Number(b.price));
     }
     setItemToShow(list);
   }, [startIndex, selectedPage, sortType, productsPerPage, categories]);
 
-  let pages = [];
-  for (let a = 1; a <= totalPages; a++) {
-    pages.push(a);
-  }
+  useEffect(() => {
+    setTotalPages(Math.ceil(products.length / productsPerPage));
+  }, [productsPerPage]);
+
+  useEffect(() => {
+    let pages = [];
+    for (let a = 1; a <= totalPages; a++) {
+      pages.push(a);
+    }
+    setPages(pages);
+  }, [totalPages]);
 
   function chageView(e) {
     const target = e.target.parentElement.id;
@@ -71,6 +77,12 @@ function Catalog() {
       setSelectedPage(num);
       setStartIndex((num - 1) * productsPerPage);
     }
+  }
+
+  function changeProductPerPage(e) {
+    setSelectedPage(1);
+    setStartIndex(0);
+    changePage(e);
   }
 
   return (
@@ -279,9 +291,30 @@ function Catalog() {
                 <div className="sort-select">
                   <label>Show</label>
                   <select className="selectBox">
-                    <option onClick={() => setProductsPerPage(12)}>12</option>
-                    <option onClick={() => setProductsPerPage(16)}>16</option>
-                    <option onClick={() => setProductsPerPage(18)}>18</option>
+                    <option
+                      onClick={() => {
+                        setProductsPerPage(12);
+                        changeProductPerPage();
+                      }}
+                    >
+                      12
+                    </option>
+                    <option
+                      onClick={() => {
+                        setProductsPerPage(16);
+                        changeProductPerPage();
+                      }}
+                    >
+                      16
+                    </option>
+                    <option
+                      onClick={() => {
+                        setProductsPerPage(18);
+                        changeProductPerPage();
+                      }}
+                    >
+                      18
+                    </option>
                   </select>
                 </div>
                 <div className="lg-panel htabs">
@@ -325,7 +358,10 @@ function Catalog() {
                 <p className="pag-p">
                   Items{" "}
                   <span>
-                    {startIndex || 1} to {productsPerPage * selectedPage}
+                    {startIndex || 1} to{" "}
+                    {productsPerPage * selectedPage > products.length
+                      ? products.length
+                      : productsPerPage * selectedPage}
                   </span>{" "}
                   of {products.length} Total
                 </p>
@@ -335,7 +371,10 @@ function Catalog() {
                     <ul>
                       {pages.map((item, i) => (
                         <li key={i} className="pagenation-item">
-                          <p className="pagenation-item" onClick={changePage}>
+                          <p
+                            className="pagenation-item"
+                            onClick={(e) => changePage(e)}
+                          >
                             {item}
                           </p>
                         </li>
