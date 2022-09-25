@@ -5,6 +5,7 @@ import CatalogList from "./components-items/CatalogList";
 import products from "../data/products.json";
 
 function Catalog() {
+  const [productsList, setProductsList] = useState(products);
   const [displayProducts, setDisplayProducts] = useState("grid");
   const [activeDisplay, setActiveDisplay] = useState("grid");
   const [productsPerPage, setProductsPerPage] = useState(12);
@@ -26,11 +27,20 @@ function Catalog() {
 
     if (categories === "women") {
       items = products.filter((i) => i.category === "women");
-      setTotalPages(Math.ceil(items.length / productsPerPage));
+      if (items.length >= productsPerPage) {
+        setTotalPages(Math.ceil(items.length / productsPerPage));
+      } else {
+        setTotalPages(1);
+      }
     } else if (categories === "men") {
       items = products.filter((i) => i.category === "men");
-      setTotalPages(Math.ceil(items.length / productsPerPage));
+      if (items.length >= productsPerPage) {
+        setTotalPages(Math.ceil(items.length / productsPerPage));
+      } else {
+        setTotalPages(1);
+      }
     }
+    setProductsList(items);
 
     const list = items.slice(startIndex, endIndex);
     if (sortType === "By Name") {
@@ -43,9 +53,10 @@ function Catalog() {
     setItemToShow(list);
   }, [startIndex, selectedPage, sortType, productsPerPage, categories]);
 
+  // to Fix filtering prages....
   useEffect(() => {
-    setTotalPages(Math.ceil(products.length / productsPerPage));
-  }, [productsPerPage]);
+    setTotalPages(Math.ceil(productsList.length / productsPerPage));
+  }, [productsPerPage, productsList]);
 
   useEffect(() => {
     let pages = [];
@@ -53,7 +64,7 @@ function Catalog() {
       pages.push(a);
     }
     setPages(pages);
-  }, [totalPages]);
+  }, [totalPages, productsPerPage]);
 
   function chageView(e) {
     const target = e.target.parentElement.id;
@@ -97,9 +108,10 @@ function Catalog() {
                 <ul>
                   <li>
                     <p
-                      onClick={(e) =>
-                        setCategories(e.target.firstChild.data.toLowerCase())
-                      }
+                      onClick={(e) => {
+                        setCategories(e.target.firstChild.data.toLowerCase());
+                        changeProductPerPage();
+                      }}
                       className="categories-type"
                     >
                       All <span>({products.length})</span>
@@ -107,9 +119,10 @@ function Catalog() {
                   </li>
                   <li>
                     <p
-                      onClick={(e) =>
-                        setCategories(e.target.firstChild.data.toLowerCase())
-                      }
+                      onClick={(e) => {
+                        setCategories(e.target.firstChild.data.toLowerCase());
+                        changeProductPerPage();
+                      }}
                       className="categories-type"
                     >
                       Women{" "}
@@ -121,9 +134,10 @@ function Catalog() {
                   </li>
                   <li>
                     <p
-                      onClick={(e) =>
-                        setCategories(e.target.firstChild.data.toLowerCase())
-                      }
+                      onClick={(e) => {
+                        setCategories(e.target.firstChild.data.toLowerCase());
+                        changeProductPerPage();
+                      }}
                       className="categories-type"
                     >
                       Men{" "}
